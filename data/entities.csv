@@ -1,4 +1,25 @@
-"entity_id","entity_type","domain"
-"E-001","industrial portfolio margin","product strategy studio"
-"E-002","stakeholder","operations"
-"E-003","metric_owner","analytics"
+entity_id,entity_name,entity_type,segment,owner_team,region_or_scope,business_priority,risk_tier
+ENT001,Product family 1,Roadmap bet,At Risk,Supply chain,Central,High,Low
+ENT002,Plant line 2,Supplier group,Emerging,Sales,National,Medium,Low
+ENT003,Quality queue 3,Plant line,Core,Product,Enterprise,Medium,Low
+ENT004,Roadmap bet 4,Customer segment,Experimental,Product,National,Medium,High
+ENT005,Pricing band 5,Quality queue,Emerging,Supply chain,West,Medium,High
+ENT006,Roadmap bet 6,Metric contract,Experimental,Sales,East,Medium,Low
+ENT007,Quality queue 7,Pricing band,At Risk,Operations,Remote,Medium,High
+ENT008,Roadmap bet 8,Supplier group,Experimental,Operations,East,High,High
+ENT009,Supplier group 9,Product family,Core,Sales,National,Low,Low
+ENT010,Pricing band 10,Quality queue,At Risk,Quality,East,Medium,High
+ENT011,Customer segment 11,Quality queue,Experimental,Quality,Enterprise,Low,Low
+ENT012,Supplier group 12,Roadmap bet,At Risk,Product,Remote,Low,Medium
+ENT013,Plant line 13,Product family,Emerging,Supply chain,Remote,High,Low
+ENT014,Roadmap bet 14,Supplier group,Emerging,Sales,West,Low,High
+ENT015,Plant line 15,Quality queue,Strategic,Sales,National,Medium,Medium
+ENT016,Plant line 16,Quality queue,At Risk,Operations,West,Medium,High
+ENT017,Customer segment 17,Plant line,Strategic,Operations,Remote,High,High
+ENT018,Plant line 18,Product family,Emerging,Product,West,High,High
+ENT019,Quality queue 19,Quality queue,Emerging,Supply chain,National,Low,High
+ENT020,Quality queue 20,Product family,At Risk,Supply chain,Remote,High,Low
+ENT021,Product family 21,Supplier group,Emerging,Supply chain,National,Medium,Low
+ENT022,Pricing band 22,Plant line,Emerging,Supply chain,East,Low,High
+ENT023,Product family 23,Supplier group,Emerging,Supply chain,Central,High,Medium
+ENT024,Product family 24,Product family,Core,Analytics,Central,Medium,Low

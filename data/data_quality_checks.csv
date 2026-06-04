@@ -1,0 +1,361 @@
+check_id,run_date,source_system,table_name,check_type,records_checked,failed_records,failure_rate_pct,severity,status
+CHK0001,2026-01-01,ERP,stg_extract,null_rate,234238,9895,4.22,High,fail
+CHK0002,2026-01-02,Notebook,requirement_log,threshold_breach,137338,3536,2.57,High,pass
+CHK0003,2026-01-03,Support notes,stg_extract,duplicate_key,4499,39,0.87,Low,waived
+CHK0004,2026-01-04,ERP,fact_events,threshold_breach,218600,1183,0.54,Low,pass
+CHK0005,2026-01-05,Notebook,requirement_log,definition_drift,62816,635,1.01,Medium,watch
+CHK0006,2026-01-06,CRM,fact_events,duplicate_key,87067,2788,3.2,High,waived
+CHK0007,2026-01-07,Support notes,fact_events,definition_drift,202631,7954,3.93,High,waived
+CHK0008,2026-01-08,ERP,requirement_log,null_rate,9772,290,2.97,High,pass
+CHK0009,2026-01-09,ERP,requirement_log,referential_integrity,70776,2938,4.15,High,watch
+CHK0010,2026-01-10,ERP,dim_entity,duplicate_key,144447,513,0.36,Low,pass
+CHK0011,2026-01-11,Support notes,requirement_log,freshness,227917,7891,3.46,High,pass
+CHK0012,2026-01-12,CRM,stg_extract,null_rate,211137,7752,3.67,High,waived
+CHK0013,2026-01-13,CRM,report_output,null_rate,172512,4291,2.49,Medium,waived
+CHK0014,2026-01-14,Sigma workbook,stg_extract,definition_drift,132057,3024,2.29,Medium,pass
+CHK0015,2026-01-15,Support notes,stg_extract,duplicate_key,37095,632,1.7,Medium,fail
+CHK0016,2026-01-16,CRM,fact_events,freshness,126004,2827,2.24,Medium,fail
+CHK0017,2026-01-17,Notebook,fact_events,duplicate_key,47902,1043,2.18,Medium,pass
+CHK0018,2026-01-18,ERP,dim_entity,definition_drift,238650,6243,2.62,High,watch
+CHK0019,2026-01-19,CRM,fact_events,threshold_breach,31448,634,2.02,Medium,waived
+CHK0020,2026-01-20,Notebook,requirement_log,threshold_breach,67405,2543,3.77,High,fail
+CHK0021,2026-01-21,ERP,fact_events,referential_integrity,115465,4271,3.7,High,fail
+CHK0022,2026-01-22,Notebook,fact_daily_metric,freshness,216990,237,0.11,Low,waived
+CHK0023,2026-01-23,CRM,dim_entity,threshold_breach,4228,147,3.48,High,fail
+CHK0024,2026-01-24,Sigma workbook,fact_daily_metric,referential_integrity,144808,1612,1.11,Medium,fail
+CHK0025,2026-01-25,Notebook,fact_daily_metric,referential_integrity,8857,244,2.75,High,waived
+CHK0026,2026-01-26,Data warehouse,stg_extract,threshold_breach,31843,1335,4.19,High,fail
+CHK0027,2026-01-27,Data warehouse,dim_entity,freshness,136235,1872,1.37,Medium,pass
+CHK0028,2026-01-28,ERP,report_output,threshold_breach,22585,295,1.31,Medium,watch
+CHK0029,2026-01-29,Notebook,stg_extract,freshness,58327,912,1.56,Medium,waived
+CHK0030,2026-01-30,ERP,requirement_log,threshold_breach,44513,1587,3.57,High,watch
+CHK0031,2026-01-31,ERP,fact_events,threshold_breach,212340,5480,2.58,High,pass
+CHK0032,2026-02-01,Support notes,fact_events,freshness,128623,2143,1.67,Medium,waived
+CHK0033,2026-02-02,Data warehouse,stg_extract,referential_integrity,36315,1316,3.62,High,fail
+CHK0034,2026-02-03,Sigma workbook,report_output,threshold_breach,16336,244,1.49,Medium,pass
+CHK0035,2026-02-04,Data warehouse,dim_entity,freshness,168568,3139,1.86,Medium,fail
+CHK0036,2026-02-05,Notebook,fact_events,referential_integrity,7487,77,1.03,Medium,waived
+CHK0037,2026-02-06,Sigma workbook,requirement_log,null_rate,190406,1501,0.79,Low,watch
+CHK0038,2026-02-07,Data warehouse,stg_extract,duplicate_key,40712,304,0.75,Low,waived
+CHK0039,2026-02-08,Support notes,dim_entity,referential_integrity,56115,40,0.07,Low,watch
+CHK0040,2026-02-09,Notebook,requirement_log,null_rate,37339,433,1.16,Medium,watch
+CHK0041,2026-02-10,Sigma workbook,fact_daily_metric,null_rate,18833,438,2.33,Medium,pass
+CHK0042,2026-02-11,Support notes,requirement_log,duplicate_key,54903,663,1.21,Medium,waived
+CHK0043,2026-02-12,CRM,fact_events,referential_integrity,139933,1766,1.26,Medium,watch
+CHK0044,2026-02-13,ERP,fact_events,null_rate,52196,1443,2.76,High,watch
+CHK0045,2026-02-14,Support notes,requirement_log,duplicate_key,50922,1194,2.34,Medium,fail
+CHK0046,2026-02-15,Data warehouse,stg_extract,duplicate_key,84363,953,1.13,Medium,watch
+CHK0047,2026-02-16,CRM,stg_extract,threshold_breach,175054,3848,2.2,Medium,waived
+CHK0048,2026-02-17,Data warehouse,report_output,freshness,131950,979,0.74,Low,watch
+CHK0049,2026-02-18,Support notes,fact_events,null_rate,174102,4588,2.64,High,watch
+CHK0050,2026-02-19,Notebook,fact_daily_metric,referential_integrity,23633,482,2.04,Medium,watch
+CHK0051,2026-02-20,Support notes,fact_events,referential_integrity,13464,172,1.28,Medium,watch
+CHK0052,2026-02-21,Data warehouse,requirement_log,definition_drift,211326,2196,1.04,Medium,waived
+CHK0053,2026-02-22,ERP,dim_entity,referential_integrity,9050,84,0.93,Low,pass
+CHK0054,2026-02-23,Support notes,requirement_log,referential_integrity,149780,5714,3.81,High,waived
+CHK0055,2026-02-24,Sigma workbook,fact_daily_metric,referential_integrity,106332,4644,4.37,High,fail
+CHK0056,2026-02-25,Notebook,report_output,threshold_breach,182202,1211,0.66,Low,watch
+CHK0057,2026-02-26,Notebook,stg_extract,duplicate_key,136997,4163,3.04,High,waived
+CHK0058,2026-02-27,Data warehouse,fact_daily_metric,threshold_breach,215582,7352,3.41,High,watch
+CHK0059,2026-02-28,Sigma workbook,fact_events,definition_drift,227188,1171,0.52,Low,watch
+CHK0060,2026-03-01,Notebook,stg_extract,null_rate,10868,313,2.88,High,watch
+CHK0061,2026-03-02,Notebook,stg_extract,null_rate,112776,491,0.44,Low,watch
+CHK0062,2026-03-03,Data warehouse,dim_entity,threshold_breach,232071,4024,1.73,Medium,pass
+CHK0063,2026-03-04,ERP,report_output,freshness,4045,85,2.1,Medium,watch
+CHK0064,2026-03-05,Data warehouse,dim_entity,duplicate_key,109443,11,0.01,Low,watch
+CHK0065,2026-03-06,CRM,fact_events,null_rate,200426,6425,3.21,High,fail
+CHK0066,2026-03-07,Sigma workbook,dim_entity,referential_integrity,70018,483,0.69,Low,waived
+CHK0067,2026-03-08,CRM,dim_entity,referential_integrity,64480,599,0.93,Low,fail
+CHK0068,2026-03-09,Sigma workbook,fact_daily_metric,threshold_breach,47839,228,0.48,Low,waived
+CHK0069,2026-03-10,CRM,stg_extract,duplicate_key,133743,3248,2.43,Medium,fail
+CHK0070,2026-03-11,Data warehouse,requirement_log,referential_integrity,33179,1285,3.87,High,fail
+CHK0071,2026-03-12,Sigma workbook,stg_extract,threshold_breach,205658,4246,2.06,Medium,pass
+CHK0072,2026-03-13,Sigma workbook,fact_events,duplicate_key,151074,1366,0.9,Low,watch
+CHK0073,2026-03-14,CRM,fact_daily_metric,null_rate,164182,2394,1.46,Medium,watch
+CHK0074,2026-03-15,Data warehouse,requirement_log,duplicate_key,11275,328,2.91,High,pass
+CHK0075,2026-03-16,CRM,stg_extract,definition_drift,90910,738,0.81,Low,waived
+CHK0076,2026-03-17,Sigma workbook,stg_extract,definition_drift,1936,47,2.43,Medium,pass
+CHK0077,2026-03-18,Sigma workbook,stg_extract,duplicate_key,90505,3263,3.61,High,watch
+CHK0078,2026-03-19,Notebook,requirement_log,null_rate,83140,2898,3.49,High,pass
+CHK0079,2026-03-20,Data warehouse,stg_extract,referential_integrity,80858,1146,1.42,Medium,fail
+CHK0080,2026-03-21,Sigma workbook,dim_entity,null_rate,68198,2549,3.74,High,watch
+CHK0081,2026-03-22,Sigma workbook,dim_entity,referential_integrity,97389,1204,1.24,Medium,pass
+CHK0082,2026-03-23,Sigma workbook,dim_entity,referential_integrity,178003,1751,0.98,Low,pass
+CHK0083,2026-03-24,Notebook,report_output,threshold_breach,46295,581,1.25,Medium,pass
+CHK0084,2026-03-25,CRM,stg_extract,definition_drift,235181,4736,2.01,Medium,waived
+CHK0085,2026-03-26,Sigma workbook,report_output,duplicate_key,54172,1228,2.27,Medium,fail
+CHK0086,2026-03-27,ERP,report_output,threshold_breach,230130,742,0.32,Low,pass
+CHK0087,2026-03-28,Data warehouse,report_output,referential_integrity,229206,7797,3.4,High,waived
+CHK0088,2026-03-29,ERP,report_output,referential_integrity,27669,659,2.38,Medium,waived
+CHK0089,2026-03-30,Data warehouse,stg_extract,null_rate,144157,5868,4.07,High,watch
+CHK0090,2026-03-31,Support notes,requirement_log,definition_drift,109214,3738,3.42,High,fail
+CHK0091,2026-04-01,ERP,requirement_log,threshold_breach,85548,3096,3.62,High,waived
+CHK0092,2026-04-02,Sigma workbook,requirement_log,duplicate_key,42774,1605,3.75,High,pass
+CHK0093,2026-04-03,Support notes,report_output,definition_drift,193264,557,0.29,Low,watch
+CHK0094,2026-04-04,Sigma workbook,requirement_log,null_rate,44112,150,0.34,Low,pass
+CHK0095,2026-04-05,Data warehouse,requirement_log,null_rate,132979,1658,1.25,Medium,watch
+CHK0096,2026-04-06,Sigma workbook,requirement_log,referential_integrity,48947,938,1.92,Medium,watch
+CHK0097,2026-04-07,Sigma workbook,requirement_log,definition_drift,90029,2293,2.55,High,waived
+CHK0098,2026-04-08,Support notes,dim_entity,definition_drift,104737,60,0.06,Low,watch
+CHK0099,2026-04-09,Notebook,stg_extract,definition_drift,105928,2646,2.5,Medium,fail
+CHK0100,2026-04-10,Notebook,dim_entity,referential_integrity,209544,1666,0.8,Low,watch
+CHK0101,2026-04-11,ERP,fact_events,definition_drift,100959,589,0.58,Low,waived
+CHK0102,2026-04-12,ERP,fact_events,threshold_breach,177292,3412,1.92,Medium,pass
+CHK0103,2026-04-13,Data warehouse,fact_events,referential_integrity,115629,3072,2.66,High,waived
+CHK0104,2026-04-14,Notebook,fact_events,referential_integrity,168540,561,0.33,Low,waived
+CHK0105,2026-04-15,Notebook,fact_daily_metric,threshold_breach,124430,344,0.28,Low,pass
+CHK0106,2026-04-16,Sigma workbook,report_output,duplicate_key,193666,4376,2.26,Medium,fail
+CHK0107,2026-04-17,Sigma workbook,dim_entity,definition_drift,31091,371,1.19,Medium,pass
+CHK0108,2026-04-18,Support notes,stg_extract,definition_drift,64794,1007,1.55,Medium,fail
+CHK0109,2026-04-19,CRM,fact_daily_metric,definition_drift,35944,29,0.08,Low,waived
+CHK0110,2026-04-20,Data warehouse,stg_extract,referential_integrity,136565,147,0.11,Low,watch
+CHK0111,2026-04-21,CRM,requirement_log,freshness,190628,520,0.27,Low,pass
+CHK0112,2026-04-22,Data warehouse,fact_daily_metric,definition_drift,126061,2228,1.77,Medium,fail
+CHK0113,2026-04-23,Data warehouse,dim_entity,null_rate,167922,617,0.37,Low,pass
+CHK0114,2026-04-24,Support notes,dim_entity,definition_drift,59608,1283,2.15,Medium,waived
+CHK0115,2026-04-25,ERP,requirement_log,freshness,95135,172,0.18,Low,watch
+CHK0116,2026-04-26,Sigma workbook,stg_extract,referential_integrity,38757,945,2.44,Medium,fail
+CHK0117,2026-04-27,ERP,stg_extract,referential_integrity,10464,71,0.68,Low,watch
+CHK0118,2026-04-28,CRM,fact_daily_metric,freshness,122364,5246,4.29,High,waived
+CHK0119,2026-04-29,Notebook,dim_entity,definition_drift,106317,687,0.65,Low,fail
+CHK0120,2026-04-30,Notebook,requirement_log,null_rate,7075,192,2.71,High,fail
+CHK0121,2026-01-01,Support notes,requirement_log,referential_integrity,156246,4515,2.89,High,pass
+CHK0122,2026-01-02,CRM,fact_daily_metric,threshold_breach,161938,6215,3.84,High,watch
+CHK0123,2026-01-03,Notebook,requirement_log,null_rate,169861,6080,3.58,High,watch
+CHK0124,2026-01-04,Support notes,fact_daily_metric,null_rate,152644,1651,1.08,Medium,watch
+CHK0125,2026-01-05,CRM,fact_events,referential_integrity,74373,1668,2.24,Medium,watch
+CHK0126,2026-01-06,Data warehouse,fact_daily_metric,definition_drift,236314,4601,1.95,Medium,pass
+CHK0127,2026-01-07,Sigma workbook,fact_daily_metric,null_rate,108363,4016,3.71,High,watch
+CHK0128,2026-01-08,Support notes,fact_events,freshness,168348,1239,0.74,Low,waived
+CHK0129,2026-01-09,Support notes,fact_daily_metric,definition_drift,85181,1998,2.35,Medium,watch
+CHK0130,2026-01-10,Support notes,report_output,null_rate,225842,1378,0.61,Low,fail
+CHK0131,2026-01-11,Data warehouse,requirement_log,freshness,48809,1523,3.12,High,waived
+CHK0132,2026-01-12,Sigma workbook,fact_daily_metric,threshold_breach,183089,997,0.54,Low,pass
+CHK0133,2026-01-13,ERP,fact_daily_metric,definition_drift,120785,37,0.03,Low,watch
+CHK0134,2026-01-14,ERP,requirement_log,threshold_breach,167279,5640,3.37,High,fail
+CHK0135,2026-01-15,CRM,report_output,null_rate,27798,63,0.23,Low,fail
+CHK0136,2026-01-16,CRM,dim_entity,referential_integrity,206300,6611,3.2,High,fail
+CHK0137,2026-01-17,Data warehouse,requirement_log,null_rate,55386,1738,3.14,High,waived
+CHK0138,2026-01-18,Support notes,stg_extract,referential_integrity,124374,2084,1.68,Medium,waived
+CHK0139,2026-01-19,Sigma workbook,stg_extract,definition_drift,209720,5479,2.61,High,waived
+CHK0140,2026-01-20,CRM,fact_daily_metric,duplicate_key,65809,31,0.05,Low,pass
+CHK0141,2026-01-21,Notebook,requirement_log,null_rate,170119,341,0.2,Low,waived
+CHK0142,2026-01-22,CRM,dim_entity,threshold_breach,73413,639,0.87,Low,watch
+CHK0143,2026-01-23,CRM,report_output,duplicate_key,43481,347,0.8,Low,fail
+CHK0144,2026-01-24,Notebook,fact_events,threshold_breach,78253,3518,4.5,High,pass
+CHK0145,2026-01-25,Notebook,fact_events,referential_integrity,78057,2763,3.54,High,fail
+CHK0146,2026-01-26,Data warehouse,dim_entity,null_rate,42901,160,0.37,Low,pass
+CHK0147,2026-01-27,Support notes,requirement_log,duplicate_key,184980,3548,1.92,Medium,pass
+CHK0148,2026-01-28,Notebook,stg_extract,definition_drift,60044,2211,3.68,High,watch
+CHK0149,2026-01-29,Notebook,stg_extract,threshold_breach,175757,6610,3.76,High,pass
+CHK0150,2026-01-30,Data warehouse,fact_daily_metric,definition_drift,29009,1303,4.49,High,pass
+CHK0151,2026-01-31,ERP,fact_daily_metric,threshold_breach,9337,167,1.79,Medium,waived
+CHK0152,2026-02-01,CRM,requirement_log,freshness,27681,1030,3.72,High,watch
+CHK0153,2026-02-02,Data warehouse,fact_daily_metric,duplicate_key,119770,2590,2.16,Medium,waived
+CHK0154,2026-02-03,CRM,stg_extract,freshness,165156,1472,0.89,Low,pass
+CHK0155,2026-02-04,Notebook,stg_extract,definition_drift,41669,1423,3.42,High,pass
+CHK0156,2026-02-05,ERP,dim_entity,null_rate,195414,4175,2.14,Medium,pass
+CHK0157,2026-02-06,Sigma workbook,fact_events,duplicate_key,68886,2785,4.04,High,fail
+CHK0158,2026-02-07,ERP,requirement_log,duplicate_key,188952,2344,1.24,Medium,pass
+CHK0159,2026-02-08,Support notes,fact_events,freshness,216816,1816,0.84,Low,waived
+CHK0160,2026-02-09,Notebook,fact_daily_metric,duplicate_key,31060,1381,4.45,High,pass
+CHK0161,2026-02-10,ERP,requirement_log,threshold_breach,147338,6519,4.42,High,waived
+CHK0162,2026-02-11,Sigma workbook,dim_entity,definition_drift,120085,5388,4.49,High,watch
+CHK0163,2026-02-12,Support notes,requirement_log,definition_drift,187216,879,0.47,Low,watch
+CHK0164,2026-02-13,Sigma workbook,report_output,threshold_breach,197165,7698,3.9,High,waived
+CHK0165,2026-02-14,Support notes,stg_extract,referential_integrity,42553,924,2.17,Medium,fail
+CHK0166,2026-02-15,Support notes,report_output,freshness,235564,10146,4.31,High,pass
+CHK0167,2026-02-16,ERP,report_output,threshold_breach,4536,149,3.28,High,fail
+CHK0168,2026-02-17,ERP,requirement_log,referential_integrity,201519,1816,0.9,Low,waived
+CHK0169,2026-02-18,Sigma workbook,stg_extract,freshness,172655,3488,2.02,Medium,waived
+CHK0170,2026-02-19,ERP,fact_daily_metric,duplicate_key,103102,212,0.21,Low,watch
+CHK0171,2026-02-20,CRM,report_output,referential_integrity,218244,4149,1.9,Medium,fail
+CHK0172,2026-02-21,Data warehouse,report_output,freshness,129020,4532,3.51,High,fail
+CHK0173,2026-02-22,Support notes,dim_entity,definition_drift,118115,29,0.02,Low,pass
+CHK0174,2026-02-23,Notebook,requirement_log,definition_drift,21459,702,3.27,High,pass
+CHK0175,2026-02-24,ERP,requirement_log,definition_drift,195138,3227,1.65,Medium,pass
+CHK0176,2026-02-25,Notebook,fact_daily_metric,referential_integrity,235688,499,0.21,Low,pass
+CHK0177,2026-02-26,Notebook,stg_extract,definition_drift,58351,1102,1.89,Medium,fail
+CHK0178,2026-02-27,Support notes,requirement_log,definition_drift,83732,501,0.6,Low,waived
+CHK0179,2026-02-28,Notebook,report_output,definition_drift,161423,3964,2.46,Medium,watch
+CHK0180,2026-03-01,Sigma workbook,requirement_log,duplicate_key,79230,2960,3.74,High,fail
+CHK0181,2026-03-02,Data warehouse,fact_events,referential_integrity,190084,4217,2.22,Medium,pass
+CHK0182,2026-03-03,CRM,requirement_log,duplicate_key,212390,9213,4.34,High,watch
+CHK0183,2026-03-04,Support notes,fact_events,null_rate,30534,48,0.16,Low,pass
+CHK0184,2026-03-05,CRM,report_output,null_rate,56552,2323,4.11,High,fail
+CHK0185,2026-03-06,CRM,fact_daily_metric,threshold_breach,41037,485,1.18,Medium,fail
+CHK0186,2026-03-07,Sigma workbook,requirement_log,duplicate_key,209268,1969,0.94,Low,fail
+CHK0187,2026-03-08,Notebook,fact_daily_metric,referential_integrity,39918,1106,2.77,High,pass
+CHK0188,2026-03-09,Support notes,report_output,freshness,85824,1558,1.82,Medium,fail
+CHK0189,2026-03-10,ERP,fact_events,duplicate_key,70984,44,0.06,Low,pass
+CHK0190,2026-03-11,CRM,fact_daily_metric,threshold_breach,59701,1811,3.03,High,waived
+CHK0191,2026-03-12,CRM,fact_daily_metric,definition_drift,87157,2713,3.11,High,watch
+CHK0192,2026-03-13,ERP,requirement_log,duplicate_key,217096,9001,4.15,High,waived
+CHK0193,2026-03-14,CRM,fact_daily_metric,definition_drift,58558,1601,2.73,High,waived
+CHK0194,2026-03-15,Notebook,dim_entity,referential_integrity,12417,181,1.46,Medium,fail
+CHK0195,2026-03-16,Data warehouse,stg_extract,threshold_breach,157443,3696,2.35,Medium,pass
+CHK0196,2026-03-17,Sigma workbook,stg_extract,definition_drift,61858,1657,2.68,High,pass
+CHK0197,2026-03-18,Data warehouse,fact_daily_metric,freshness,14597,77,0.53,Low,watch
+CHK0198,2026-03-19,Support notes,dim_entity,referential_integrity,195973,3819,1.95,Medium,fail
+CHK0199,2026-03-20,Data warehouse,requirement_log,threshold_breach,168010,5780,3.44,High,fail
+CHK0200,2026-03-21,Support notes,stg_extract,threshold_breach,151158,5941,3.93,High,watch
+CHK0201,2026-03-22,Sigma workbook,report_output,duplicate_key,34046,1202,3.53,High,waived
+CHK0202,2026-03-23,Data warehouse,report_output,freshness,10949,276,2.52,High,fail
+CHK0203,2026-03-24,Sigma workbook,report_output,threshold_breach,186305,2825,1.52,Medium,fail
+CHK0204,2026-03-25,Data warehouse,requirement_log,definition_drift,199064,1314,0.66,Low,fail
+CHK0205,2026-03-26,CRM,fact_daily_metric,referential_integrity,43211,534,1.24,Medium,fail
+CHK0206,2026-03-27,Data warehouse,requirement_log,duplicate_key,168280,2425,1.44,Medium,watch
+CHK0207,2026-03-28,Sigma workbook,dim_entity,null_rate,65119,1708,2.62,High,fail
+CHK0208,2026-03-29,ERP,report_output,definition_drift,12278,102,0.83,Low,waived
+CHK0209,2026-03-30,Data warehouse,fact_daily_metric,freshness,159962,1881,1.18,Medium,waived
+CHK0210,2026-03-31,Data warehouse,requirement_log,threshold_breach,197752,8712,4.41,High,waived
+CHK0211,2026-04-01,ERP,fact_events,threshold_breach,169058,5758,3.41,High,waived
+CHK0212,2026-04-02,Support notes,stg_extract,definition_drift,175502,3008,1.71,Medium,pass
+CHK0213,2026-04-03,ERP,report_output,definition_drift,231677,3230,1.39,Medium,watch
+CHK0214,2026-04-04,Support notes,requirement_log,duplicate_key,37834,1460,3.86,High,fail
+CHK0215,2026-04-05,Notebook,report_output,freshness,82778,3046,3.68,High,fail
+CHK0216,2026-04-06,Notebook,report_output,duplicate_key,120550,4446,3.69,High,watch
+CHK0217,2026-04-07,ERP,requirement_log,freshness,225352,820,0.36,Low,pass
+CHK0218,2026-04-08,Sigma workbook,requirement_log,freshness,205276,5073,2.47,Medium,fail
+CHK0219,2026-04-09,CRM,fact_daily_metric,duplicate_key,84953,2052,2.42,Medium,pass
+CHK0220,2026-04-10,Sigma workbook,stg_extract,null_rate,37612,241,0.64,Low,waived
+CHK0221,2026-04-11,CRM,dim_entity,threshold_breach,34650,1314,3.79,High,pass
+CHK0222,2026-04-12,CRM,stg_extract,null_rate,66038,2815,4.26,High,watch
+CHK0223,2026-04-13,Sigma workbook,requirement_log,freshness,125606,5187,4.13,High,pass
+CHK0224,2026-04-14,Notebook,dim_entity,null_rate,170269,1810,1.06,Medium,waived
+CHK0225,2026-04-15,Data warehouse,stg_extract,null_rate,139099,1872,1.35,Medium,fail
+CHK0226,2026-04-16,Data warehouse,requirement_log,threshold_breach,187587,754,0.4,Low,fail
+CHK0227,2026-04-17,CRM,requirement_log,duplicate_key,133986,5600,4.18,High,fail
+CHK0228,2026-04-18,Support notes,fact_daily_metric,definition_drift,125457,4137,3.3,High,pass
+CHK0229,2026-04-19,Sigma workbook,requirement_log,threshold_breach,5847,191,3.27,High,watch
+CHK0230,2026-04-20,Notebook,requirement_log,null_rate,161333,5872,3.64,High,fail
+CHK0231,2026-04-21,Data warehouse,fact_events,freshness,221791,5468,2.47,Medium,pass
+CHK0232,2026-04-22,Notebook,fact_events,null_rate,111981,1595,1.42,Medium,fail
+CHK0233,2026-04-23,CRM,stg_extract,threshold_breach,213964,4057,1.9,Medium,watch
+CHK0234,2026-04-24,Support notes,fact_daily_metric,duplicate_key,28017,257,0.92,Low,pass
+CHK0235,2026-04-25,ERP,fact_daily_metric,freshness,64149,346,0.54,Low,watch
+CHK0236,2026-04-26,ERP,requirement_log,freshness,41180,1575,3.82,High,waived
+CHK0237,2026-04-27,Data warehouse,requirement_log,freshness,168492,3610,2.14,Medium,watch
+CHK0238,2026-04-28,Notebook,fact_events,definition_drift,43652,1800,4.12,High,watch
+CHK0239,2026-04-29,Support notes,requirement_log,referential_integrity,89542,105,0.12,Low,waived
+CHK0240,2026-04-30,ERP,requirement_log,duplicate_key,77737,1076,1.38,Medium,watch
+CHK0241,2026-01-01,CRM,requirement_log,freshness,15446,585,3.79,High,fail
+CHK0242,2026-01-02,ERP,fact_daily_metric,referential_integrity,221211,2206,1,Low,waived
+CHK0243,2026-01-03,ERP,report_output,freshness,173082,5205,3.01,High,fail
+CHK0244,2026-01-04,ERP,stg_extract,null_rate,9450,223,2.36,Medium,pass
+CHK0245,2026-01-05,Notebook,fact_events,definition_drift,60167,1957,3.25,High,fail
+CHK0246,2026-01-06,Data warehouse,requirement_log,definition_drift,126466,5327,4.21,High,fail
+CHK0247,2026-01-07,ERP,stg_extract,duplicate_key,138739,4754,3.43,High,fail
+CHK0248,2026-01-08,ERP,dim_entity,null_rate,67139,2289,3.41,High,waived
+CHK0249,2026-01-09,ERP,report_output,definition_drift,81025,1015,1.25,Medium,fail
+CHK0250,2026-01-10,Data warehouse,stg_extract,definition_drift,123979,732,0.59,Low,watch
+CHK0251,2026-01-11,Data warehouse,report_output,duplicate_key,156918,6658,4.24,High,fail
+CHK0252,2026-01-12,ERP,report_output,threshold_breach,85115,221,0.26,Low,pass
+CHK0253,2026-01-13,Support notes,fact_daily_metric,referential_integrity,212865,6084,2.86,High,waived
+CHK0254,2026-01-14,ERP,report_output,threshold_breach,6838,205,3,High,fail
+CHK0255,2026-01-15,Support notes,dim_entity,definition_drift,80584,2506,3.11,High,waived
+CHK0256,2026-01-16,CRM,requirement_log,freshness,111792,2290,2.05,Medium,fail
+CHK0257,2026-01-17,CRM,fact_events,null_rate,51416,493,0.96,Low,pass
+CHK0258,2026-01-18,ERP,fact_events,definition_drift,33347,782,2.35,Medium,fail
+CHK0259,2026-01-19,Support notes,fact_daily_metric,referential_integrity,111939,2816,2.52,High,pass
+CHK0260,2026-01-20,Sigma workbook,report_output,referential_integrity,78450,3384,4.31,High,watch
+CHK0261,2026-01-21,Support notes,report_output,referential_integrity,45036,740,1.64,Medium,fail
+CHK0262,2026-01-22,Sigma workbook,requirement_log,definition_drift,65068,2830,4.35,High,fail
+CHK0263,2026-01-23,Data warehouse,dim_entity,definition_drift,168449,5444,3.23,High,pass
+CHK0264,2026-01-24,ERP,report_output,referential_integrity,200552,3290,1.64,Medium,fail
+CHK0265,2026-01-25,Support notes,stg_extract,null_rate,150617,2221,1.47,Medium,waived
+CHK0266,2026-01-26,Support notes,fact_events,definition_drift,155006,3594,2.32,Medium,fail
+CHK0267,2026-01-27,ERP,dim_entity,freshness,101021,3713,3.68,High,waived
+CHK0268,2026-01-28,Support notes,dim_entity,duplicate_key,198005,7856,3.97,High,fail
+CHK0269,2026-01-29,Data warehouse,stg_extract,null_rate,59237,1290,2.18,Medium,pass
+CHK0270,2026-01-30,ERP,fact_events,duplicate_key,193949,6194,3.19,High,watch
+CHK0271,2026-01-31,Data warehouse,fact_daily_metric,referential_integrity,46728,313,0.67,Low,fail
+CHK0272,2026-02-01,Support notes,report_output,duplicate_key,204778,5206,2.54,High,watch
+CHK0273,2026-02-02,Notebook,fact_events,duplicate_key,34760,1472,4.23,High,waived
+CHK0274,2026-02-03,Notebook,dim_entity,null_rate,50160,1606,3.2,High,pass
+CHK0275,2026-02-04,Sigma workbook,requirement_log,referential_integrity,198487,1234,0.62,Low,pass
+CHK0276,2026-02-05,Data warehouse,dim_entity,definition_drift,19061,484,2.54,High,waived
+CHK0277,2026-02-06,Support notes,dim_entity,definition_drift,212587,4001,1.88,Medium,waived
+CHK0278,2026-02-07,Support notes,fact_daily_metric,null_rate,202412,6428,3.18,High,fail
+CHK0279,2026-02-08,Notebook,stg_extract,threshold_breach,230886,1359,0.59,Low,pass
+CHK0280,2026-02-09,Notebook,fact_events,definition_drift,42783,360,0.84,Low,fail
+CHK0281,2026-02-10,CRM,requirement_log,definition_drift,32960,664,2.01,Medium,pass
+CHK0282,2026-02-11,Notebook,report_output,null_rate,235179,1254,0.53,Low,pass
+CHK0283,2026-02-12,CRM,stg_extract,null_rate,56557,1285,2.27,Medium,waived
+CHK0284,2026-02-13,CRM,fact_daily_metric,referential_integrity,83273,2870,3.45,High,watch
+CHK0285,2026-02-14,Support notes,requirement_log,freshness,200812,8038,4,High,waived
+CHK0286,2026-02-15,Support notes,stg_extract,referential_integrity,219177,6366,2.9,High,fail
+CHK0287,2026-02-16,ERP,fact_daily_metric,referential_integrity,238708,957,0.4,Low,fail
+CHK0288,2026-02-17,Support notes,fact_daily_metric,definition_drift,83479,1317,1.58,Medium,waived
+CHK0289,2026-02-18,Data warehouse,requirement_log,definition_drift,235367,8002,3.4,High,watch
+CHK0290,2026-02-19,Data warehouse,dim_entity,null_rate,193249,818,0.42,Low,waived
+CHK0291,2026-02-20,ERP,requirement_log,definition_drift,146195,5893,4.03,High,pass
+CHK0292,2026-02-21,CRM,stg_extract,freshness,149526,1356,0.91,Low,waived
+CHK0293,2026-02-22,Sigma workbook,dim_entity,freshness,220695,3478,1.58,Medium,waived
+CHK0294,2026-02-23,Data warehouse,stg_extract,null_rate,139606,235,0.17,Low,fail
+CHK0295,2026-02-24,ERP,report_output,duplicate_key,70352,523,0.74,Low,waived
+CHK0296,2026-02-25,Sigma workbook,report_output,threshold_breach,114833,529,0.46,Low,waived
+CHK0297,2026-02-26,Support notes,stg_extract,null_rate,59612,1934,3.24,High,pass
+CHK0298,2026-02-27,Sigma workbook,fact_events,freshness,213217,2704,1.27,Medium,waived
+CHK0299,2026-02-28,Support notes,stg_extract,definition_drift,127564,4156,3.26,High,watch
+CHK0300,2026-03-01,Sigma workbook,report_output,freshness,75980,1651,2.17,Medium,fail
+CHK0301,2026-03-02,ERP,dim_entity,definition_drift,58130,1104,1.9,Medium,watch
+CHK0302,2026-03-03,Sigma workbook,requirement_log,threshold_breach,29349,191,0.65,Low,watch
+CHK0303,2026-03-04,Notebook,fact_daily_metric,referential_integrity,13995,412,2.94,High,pass
+CHK0304,2026-03-05,Data warehouse,stg_extract,null_rate,225915,3597,1.59,Medium,waived
+CHK0305,2026-03-06,Support notes,dim_entity,freshness,209262,5555,2.65,High,fail
+CHK0306,2026-03-07,ERP,stg_extract,freshness,118851,2936,2.47,Medium,fail
+CHK0307,2026-03-08,CRM,report_output,freshness,90869,1125,1.24,Medium,watch
+CHK0308,2026-03-09,Sigma workbook,dim_entity,null_rate,223724,555,0.25,Low,waived
+CHK0309,2026-03-10,ERP,stg_extract,definition_drift,89769,1345,1.5,Medium,fail
+CHK0310,2026-03-11,Notebook,dim_entity,duplicate_key,49597,2061,4.16,High,watch
+CHK0311,2026-03-12,CRM,stg_extract,threshold_breach,212288,4208,1.98,Medium,fail
+CHK0312,2026-03-13,CRM,fact_events,duplicate_key,14543,535,3.68,High,pass
+CHK0313,2026-03-14,CRM,fact_events,threshold_breach,87467,1701,1.94,Medium,waived
+CHK0314,2026-03-15,Sigma workbook,requirement_log,duplicate_key,150877,6273,4.16,High,fail
+CHK0315,2026-03-16,Sigma workbook,stg_extract,referential_integrity,122815,795,0.65,Low,pass
+CHK0316,2026-03-17,Data warehouse,report_output,definition_drift,186024,1115,0.6,Low,waived
+CHK0317,2026-03-18,Notebook,stg_extract,definition_drift,131872,2106,1.6,Medium,waived
+CHK0318,2026-03-19,CRM,fact_daily_metric,definition_drift,143131,6177,4.32,High,waived
+CHK0319,2026-03-20,Notebook,requirement_log,threshold_breach,228799,4518,1.97,Medium,watch
+CHK0320,2026-03-21,Notebook,report_output,freshness,186943,7948,4.25,High,pass
+CHK0321,2026-03-22,ERP,fact_events,referential_integrity,233809,6112,2.61,High,fail
+CHK0322,2026-03-23,Sigma workbook,requirement_log,null_rate,174641,4195,2.4,Medium,fail
+CHK0323,2026-03-24,Support notes,dim_entity,freshness,112251,3396,3.03,High,waived
+CHK0324,2026-03-25,Notebook,fact_daily_metric,null_rate,148772,4286,2.88,High,waived
+CHK0325,2026-03-26,Sigma workbook,fact_daily_metric,referential_integrity,202758,2201,1.09,Medium,fail
+CHK0326,2026-03-27,Notebook,fact_daily_metric,duplicate_key,198771,3613,1.82,Medium,watch
+CHK0327,2026-03-28,Support notes,fact_daily_metric,freshness,49670,64,0.13,Low,waived
+CHK0328,2026-03-29,Support notes,report_output,threshold_breach,90989,3542,3.89,High,watch
+CHK0329,2026-03-30,Sigma workbook,report_output,null_rate,216356,675,0.31,Low,pass
+CHK0330,2026-03-31,Sigma workbook,requirement_log,referential_integrity,83752,2042,2.44,Medium,waived
+CHK0331,2026-04-01,ERP,dim_entity,definition_drift,34223,596,1.74,Medium,pass
+CHK0332,2026-04-02,Support notes,stg_extract,definition_drift,98141,641,0.65,Low,watch
+CHK0333,2026-04-03,Notebook,fact_events,freshness,89253,2669,2.99,High,watch
+CHK0334,2026-04-04,Notebook,dim_entity,referential_integrity,215826,8901,4.12,High,pass
+CHK0335,2026-04-05,Notebook,stg_extract,definition_drift,128465,2849,2.22,Medium,fail
+CHK0336,2026-04-06,Sigma workbook,stg_extract,threshold_breach,33459,484,1.45,Medium,pass
+CHK0337,2026-04-07,Support notes,fact_daily_metric,referential_integrity,111709,343,0.31,Low,waived
+CHK0338,2026-04-08,Support notes,fact_daily_metric,null_rate,203733,778,0.38,Low,watch
+CHK0339,2026-04-09,Sigma workbook,requirement_log,duplicate_key,234022,4604,1.97,Medium,fail
+CHK0340,2026-04-10,Notebook,fact_daily_metric,threshold_breach,224226,8067,3.6,High,waived
+CHK0341,2026-04-11,Data warehouse,stg_extract,definition_drift,109145,3208,2.94,High,fail
+CHK0342,2026-04-12,CRM,requirement_log,duplicate_key,229348,6157,2.68,High,watch
+CHK0343,2026-04-13,Support notes,requirement_log,definition_drift,235015,4812,2.05,Medium,watch
+CHK0344,2026-04-14,Notebook,report_output,referential_integrity,9285,254,2.74,High,fail
+CHK0345,2026-04-15,Sigma workbook,report_output,definition_drift,71450,1041,1.46,Medium,waived
+CHK0346,2026-04-16,Notebook,dim_entity,threshold_breach,21273,202,0.95,Low,pass
+CHK0347,2026-04-17,Notebook,report_output,duplicate_key,36836,50,0.14,Low,waived
+CHK0348,2026-04-18,Support notes,fact_daily_metric,freshness,128705,1596,1.24,Medium,pass
+CHK0349,2026-04-19,Notebook,requirement_log,definition_drift,199228,272,0.14,Low,fail
+CHK0350,2026-04-20,Sigma workbook,stg_extract,definition_drift,235376,9793,4.16,High,waived
+CHK0351,2026-04-21,Support notes,dim_entity,duplicate_key,217876,3113,1.43,Medium,fail
+CHK0352,2026-04-22,Sigma workbook,stg_extract,threshold_breach,105197,2416,2.3,Medium,waived
+CHK0353,2026-04-23,Data warehouse,report_output,duplicate_key,127799,3421,2.68,High,pass
+CHK0354,2026-04-24,Sigma workbook,fact_events,referential_integrity,23076,847,3.67,High,waived
+CHK0355,2026-04-25,Notebook,report_output,null_rate,184600,7246,3.93,High,fail
+CHK0356,2026-04-26,ERP,dim_entity,definition_drift,185278,5866,3.17,High,fail
+CHK0357,2026-04-27,ERP,stg_extract,referential_integrity,199355,7625,3.82,High,pass
+CHK0358,2026-04-28,Data warehouse,fact_events,definition_drift,116189,3648,3.14,High,waived
+CHK0359,2026-04-29,Sigma workbook,report_output,duplicate_key,49174,1545,3.14,High,pass
+CHK0360,2026-04-30,Data warehouse,stg_extract,freshness,185782,1987,1.07,Medium,pass

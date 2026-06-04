@@ -1,0 +1,81 @@
+requirement_id,stakeholder_group,business_question,required_metric,decision_supported,refresh_cadence,acceptance_test,status
+REQ0001,Product,How should launch readiness change the next operating decision?,launch_readiness,prioritize roadmap,daily,action owner assigned,new
+REQ0002,Product,How should launch readiness change the next operating decision?,launch_readiness,improve quality,daily,sample reconciles,new
+REQ0003,Sales,How should automation savings change the next operating decision?,automation_savings,reduce manual work,daily,dashboard explains variance,validated
+REQ0004,Analytics,How should backlog age change the next operating decision?,backlog_age,reduce manual work,monthly,metric owner approved,in build
+REQ0005,Sales,How should backlog age change the next operating decision?,backlog_age,improve quality,monthly,metric owner approved,new
+REQ0006,Product,How should metric certification change the next operating decision?,metric_certification,prioritize roadmap,daily,action owner assigned,in build
+REQ0007,Operations,How should gross margin change the next operating decision?,gross_margin,sequence launch,daily,SQL check passes,in build
+REQ0008,Product,How should backlog age change the next operating decision?,backlog_age,reduce manual work,daily,SQL check passes,validated
+REQ0009,Analytics,How should automation savings change the next operating decision?,automation_savings,improve quality,monthly,dashboard explains variance,validated
+REQ0010,Product,How should launch readiness change the next operating decision?,launch_readiness,prioritize roadmap,daily,SQL check passes,in build
+REQ0011,Analytics,How should metric certification change the next operating decision?,metric_certification,reduce manual work,near real time,sample reconciles,validated
+REQ0012,Supply chain,How should launch readiness change the next operating decision?,launch_readiness,prioritize roadmap,weekly,metric owner approved,in build
+REQ0013,Sales,How should backlog age change the next operating decision?,backlog_age,focus outreach,weekly,SQL check passes,validated
+REQ0014,Sales,How should launch readiness change the next operating decision?,launch_readiness,prioritize roadmap,daily,action owner assigned,validated
+REQ0015,Quality,How should metric certification change the next operating decision?,metric_certification,sequence launch,weekly,SQL check passes,new
+REQ0016,Analytics,How should metric certification change the next operating decision?,metric_certification,prioritize roadmap,daily,dashboard explains variance,blocked
+REQ0017,Quality,How should gross margin change the next operating decision?,gross_margin,prioritize roadmap,near real time,sample reconciles,blocked
+REQ0018,Sales,How should metric certification change the next operating decision?,metric_certification,protect margin,near real time,metric owner approved,in build
+REQ0019,Analytics,How should launch readiness change the next operating decision?,launch_readiness,reduce manual work,monthly,SQL check passes,in build
+REQ0020,Analytics,How should metric certification change the next operating decision?,metric_certification,improve quality,near real time,dashboard explains variance,validated
+REQ0021,Sales,How should launch readiness change the next operating decision?,launch_readiness,prioritize roadmap,near real time,SQL check passes,in build
+REQ0022,Operations,How should launch readiness change the next operating decision?,launch_readiness,focus outreach,near real time,SQL check passes,new
+REQ0023,Operations,How should automation savings change the next operating decision?,automation_savings,improve quality,daily,SQL check passes,triaged
+REQ0024,Supply chain,How should metric certification change the next operating decision?,metric_certification,improve quality,daily,sample reconciles,triaged
+REQ0025,Analytics,How should automation savings change the next operating decision?,automation_savings,protect margin,daily,action owner assigned,triaged
+REQ0026,Supply chain,How should gross margin change the next operating decision?,gross_margin,focus outreach,daily,metric owner approved,validated
+REQ0027,Quality,How should metric certification change the next operating decision?,metric_certification,focus outreach,weekly,SQL check passes,triaged
+REQ0028,Quality,How should qa defect rate change the next operating decision?,qa_defect_rate,prioritize roadmap,near real time,sample reconciles,in build
+REQ0029,Operations,How should metric certification change the next operating decision?,metric_certification,focus outreach,weekly,action owner assigned,in build
+REQ0030,Quality,How should launch readiness change the next operating decision?,launch_readiness,protect margin,weekly,metric owner approved,blocked
+REQ0031,Analytics,How should gross margin change the next operating decision?,gross_margin,focus outreach,daily,metric owner approved,in build
+REQ0032,Analytics,How should launch readiness change the next operating decision?,launch_readiness,protect margin,daily,sample reconciles,blocked
+REQ0033,Operations,How should automation savings change the next operating decision?,automation_savings,reduce manual work,monthly,sample reconciles,triaged
+REQ0034,Supply chain,How should backlog age change the next operating decision?,backlog_age,focus outreach,near real time,metric owner approved,blocked
+REQ0035,Product,How should qa defect rate change the next operating decision?,qa_defect_rate,reduce manual work,weekly,sample reconciles,blocked
+REQ0036,Sales,How should backlog age change the next operating decision?,backlog_age,focus outreach,daily,action owner assigned,triaged
+REQ0037,Operations,How should launch readiness change the next operating decision?,launch_readiness,sequence launch,weekly,SQL check passes,in build
+REQ0038,Analytics,How should metric certification change the next operating decision?,metric_certification,prioritize roadmap,weekly,action owner assigned,validated
+REQ0039,Operations,How should gross margin change the next operating decision?,gross_margin,prioritize roadmap,near real time,SQL check passes,in build
+REQ0040,Operations,How should qa defect rate change the next operating decision?,qa_defect_rate,sequence launch,near real time,action owner assigned,validated
+REQ0041,Quality,How should launch readiness change the next operating decision?,launch_readiness,protect margin,weekly,SQL check passes,new
+REQ0042,Supply chain,How should qa defect rate change the next operating decision?,qa_defect_rate,prioritize roadmap,daily,action owner assigned,triaged
+REQ0043,Quality,How should backlog age change the next operating decision?,backlog_age,prioritize roadmap,monthly,dashboard explains variance,in build
+REQ0044,Quality,How should backlog age change the next operating decision?,backlog_age,protect margin,weekly,SQL check passes,validated
+REQ0045,Analytics,How should gross margin change the next operating decision?,gross_margin,sequence launch,near real time,dashboard explains variance,validated
+REQ0046,Quality,How should launch readiness change the next operating decision?,launch_readiness,focus outreach,near real time,metric owner approved,blocked
+REQ0047,Supply chain,How should metric certification change the next operating decision?,metric_certification,improve quality,daily,metric owner approved,in build
+REQ0048,Sales,How should qa defect rate change the next operating decision?,qa_defect_rate,protect margin,monthly,action owner assigned,new
+REQ0049,Supply chain,How should metric certification change the next operating decision?,metric_certification,focus outreach,daily,metric owner approved,blocked
+REQ0050,Product,How should automation savings change the next operating decision?,automation_savings,reduce manual work,daily,dashboard explains variance,validated
+REQ0051,Analytics,How should qa defect rate change the next operating decision?,qa_defect_rate,sequence launch,weekly,dashboard explains variance,in build
+REQ0052,Sales,How should launch readiness change the next operating decision?,launch_readiness,sequence launch,near real time,action owner assigned,in build
+REQ0053,Product,How should backlog age change the next operating decision?,backlog_age,prioritize roadmap,weekly,dashboard explains variance,blocked
+REQ0054,Product,How should backlog age change the next operating decision?,backlog_age,protect margin,near real time,sample reconciles,new
+REQ0055,Quality,How should metric certification change the next operating decision?,metric_certification,prioritize roadmap,weekly,sample reconciles,triaged
+REQ0056,Product,How should metric certification change the next operating decision?,metric_certification,protect margin,weekly,action owner assigned,in build
+REQ0057,Product,How should metric certification change the next operating decision?,metric_certification,prioritize roadmap,daily,metric owner approved,validated
+REQ0058,Product,How should launch readiness change the next operating decision?,launch_readiness,improve quality,weekly,action owner assigned,blocked
+REQ0059,Product,How should automation savings change the next operating decision?,automation_savings,improve quality,near real time,sample reconciles,in build
+REQ0060,Sales,How should metric certification change the next operating decision?,metric_certification,prioritize roadmap,daily,metric owner approved,blocked
+REQ0061,Sales,How should metric certification change the next operating decision?,metric_certification,improve quality,near real time,dashboard explains variance,in build
+REQ0062,Quality,How should gross margin change the next operating decision?,gross_margin,improve quality,near real time,dashboard explains variance,new
+REQ0063,Product,How should gross margin change the next operating decision?,gross_margin,reduce manual work,monthly,action owner assigned,in build
+REQ0064,Operations,How should launch readiness change the next operating decision?,launch_readiness,improve quality,near real time,metric owner approved,in build
+REQ0065,Analytics,How should launch readiness change the next operating decision?,launch_readiness,reduce manual work,near real time,action owner assigned,blocked
+REQ0066,Operations,How should backlog age change the next operating decision?,backlog_age,focus outreach,weekly,sample reconciles,validated
+REQ0067,Supply chain,How should qa defect rate change the next operating decision?,qa_defect_rate,focus outreach,weekly,metric owner approved,triaged
+REQ0068,Supply chain,How should automation savings change the next operating decision?,automation_savings,protect margin,monthly,action owner assigned,triaged
+REQ0069,Product,How should qa defect rate change the next operating decision?,qa_defect_rate,sequence launch,near real time,SQL check passes,triaged
+REQ0070,Sales,How should backlog age change the next operating decision?,backlog_age,protect margin,daily,action owner assigned,blocked
+REQ0071,Supply chain,How should gross margin change the next operating decision?,gross_margin,prioritize roadmap,monthly,SQL check passes,blocked
+REQ0072,Quality,How should launch readiness change the next operating decision?,launch_readiness,improve quality,weekly,metric owner approved,validated
+REQ0073,Sales,How should qa defect rate change the next operating decision?,qa_defect_rate,focus outreach,near real time,dashboard explains variance,blocked
+REQ0074,Sales,How should launch readiness change the next operating decision?,launch_readiness,prioritize roadmap,weekly,SQL check passes,in build
+REQ0075,Operations,How should launch readiness change the next operating decision?,launch_readiness,focus outreach,monthly,SQL check passes,in build
+REQ0076,Analytics,How should backlog age change the next operating decision?,backlog_age,improve quality,weekly,SQL check passes,new
+REQ0077,Analytics,How should metric certification change the next operating decision?,metric_certification,improve quality,near real time,SQL check passes,in build
+REQ0078,Quality,How should automation savings change the next operating decision?,automation_savings,sequence launch,daily,action owner assigned,in build
+REQ0079,Product,How should backlog age change the next operating decision?,backlog_age,protect margin,daily,sample reconciles,validated
+REQ0080,Operations,How should qa defect rate change the next operating decision?,qa_defect_rate,reduce manual work,daily,sample reconciles,triaged

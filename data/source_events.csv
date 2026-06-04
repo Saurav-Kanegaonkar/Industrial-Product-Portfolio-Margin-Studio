@@ -1,5 +1,721 @@
-"signal","owner","status","finding","risk"
-"Obsolescence","Legacy SKU","Review","Low margin, high support","High"
-"NPD gate","Valve line","Ready","Strong business case","Low"
-"Pricing","Motion control","Alert","Supplier cost pressure","High"
-"Training","Sales enablement","Draft","Needs update","Medium"
+event_id,event_date,entity_id,source_system,event_type,severity,owner_team,impacted_metric,records_impacted,note
+EVT00001,2026-01-01,ENT001,ERP,qa_failure,Low,Analytics,metric_certification,21231,industrial portfolio margin signal 1
+EVT00002,2026-01-02,ENT002,CRM,manual_override,Medium,Analytics,automation_savings,56888,industrial portfolio margin signal 2
+EVT00003,2026-01-03,ENT003,Sigma workbook,refresh_delay,Medium,Sales,metric_certification,51850,industrial portfolio margin signal 3
+EVT00004,2026-01-04,ENT004,Data warehouse,definition_change,Critical,Analytics,automation_savings,35108,industrial portfolio margin signal 4
+EVT00005,2026-01-05,ENT005,CRM,refresh_delay,Low,Product,automation_savings,47106,industrial portfolio margin signal 5
+EVT00006,2026-01-06,ENT006,ERP,definition_change,Low,Supply chain,launch_readiness,53376,industrial portfolio margin signal 6
+EVT00007,2026-01-07,ENT007,Support notes,qa_failure,High,Sales,backlog_age,42386,industrial portfolio margin signal 7
+EVT00008,2026-01-08,ENT008,Support notes,automation_run,High,Operations,metric_certification,61631,industrial portfolio margin signal 8
+EVT00009,2026-01-09,ENT009,Sigma workbook,qa_failure,Critical,Product,backlog_age,43557,industrial portfolio margin signal 9
+EVT00010,2026-01-10,ENT010,Notebook,release_review,Low,Product,gross_margin,11153,industrial portfolio margin signal 10
+EVT00011,2026-01-11,ENT011,CRM,refresh_delay,Critical,Operations,launch_readiness,17215,industrial portfolio margin signal 11
+EVT00012,2026-01-12,ENT012,Sigma workbook,definition_change,Medium,Sales,qa_defect_rate,9214,industrial portfolio margin signal 12
+EVT00013,2026-01-13,ENT013,CRM,definition_change,Low,Sales,metric_certification,46835,industrial portfolio margin signal 13
+EVT00014,2026-01-14,ENT014,Data warehouse,qa_failure,Medium,Sales,gross_margin,21344,industrial portfolio margin signal 14
+EVT00015,2026-01-15,ENT015,ERP,refresh_delay,Critical,Operations,metric_certification,57325,industrial portfolio margin signal 15
+EVT00016,2026-01-16,ENT016,Sigma workbook,definition_change,Critical,Sales,launch_readiness,18844,industrial portfolio margin signal 16
+EVT00017,2026-01-17,ENT017,CRM,qa_failure,Medium,Supply chain,launch_readiness,13415,industrial portfolio margin signal 17
+EVT00018,2026-01-18,ENT018,Data warehouse,definition_change,High,Quality,backlog_age,59313,industrial portfolio margin signal 18
+EVT00019,2026-01-19,ENT019,Data warehouse,refresh_delay,Low,Quality,metric_certification,25389,industrial portfolio margin signal 19
+EVT00020,2026-01-20,ENT020,CRM,qa_failure,Medium,Operations,automation_savings,51296,industrial portfolio margin signal 20
+EVT00021,2026-01-21,ENT021,Sigma workbook,refresh_delay,Critical,Sales,metric_certification,59053,industrial portfolio margin signal 21
+EVT00022,2026-01-22,ENT022,Support notes,refresh_delay,Critical,Supply chain,gross_margin,23278,industrial portfolio margin signal 22
+EVT00023,2026-01-23,ENT023,Sigma workbook,release_review,High,Sales,backlog_age,15928,industrial portfolio margin signal 23
+EVT00024,2026-01-24,ENT024,Support notes,release_review,Critical,Operations,metric_certification,59372,industrial portfolio margin signal 24
+EVT00025,2026-01-25,ENT001,Data warehouse,manual_override,Low,Operations,launch_readiness,35495,industrial portfolio margin signal 25
+EVT00026,2026-01-26,ENT002,Sigma workbook,automation_run,High,Product,automation_savings,9202,industrial portfolio margin signal 26
+EVT00027,2026-01-27,ENT003,Sigma workbook,manual_override,Critical,Analytics,backlog_age,19176,industrial portfolio margin signal 27
+EVT00028,2026-01-28,ENT004,Data warehouse,manual_override,High,Supply chain,qa_defect_rate,24581,industrial portfolio margin signal 28
+EVT00029,2026-01-29,ENT005,ERP,release_review,Low,Sales,backlog_age,56174,industrial portfolio margin signal 29
+EVT00030,2026-01-30,ENT006,Sigma workbook,refresh_delay,Critical,Quality,automation_savings,16291,industrial portfolio margin signal 30
+EVT00031,2026-01-31,ENT007,Support notes,release_review,Low,Operations,automation_savings,38121,industrial portfolio margin signal 31
+EVT00032,2026-02-01,ENT008,ERP,stakeholder_request,Medium,Sales,qa_defect_rate,44171,industrial portfolio margin signal 32
+EVT00033,2026-02-02,ENT009,Data warehouse,definition_change,High,Product,backlog_age,49680,industrial portfolio margin signal 33
+EVT00034,2026-02-03,ENT010,CRM,manual_override,Medium,Operations,backlog_age,12722,industrial portfolio margin signal 34
+EVT00035,2026-02-04,ENT011,ERP,stakeholder_request,Medium,Sales,gross_margin,39005,industrial portfolio margin signal 35
+EVT00036,2026-02-05,ENT012,CRM,definition_change,High,Quality,backlog_age,34687,industrial portfolio margin signal 36
+EVT00037,2026-02-06,ENT013,Sigma workbook,refresh_delay,Low,Sales,gross_margin,14308,industrial portfolio margin signal 37
+EVT00038,2026-02-07,ENT014,Notebook,release_review,Medium,Supply chain,automation_savings,51726,industrial portfolio margin signal 38
+EVT00039,2026-02-08,ENT015,Data warehouse,automation_run,Critical,Product,automation_savings,45131,industrial portfolio margin signal 39
+EVT00040,2026-02-09,ENT016,Support notes,qa_failure,High,Quality,metric_certification,43665,industrial portfolio margin signal 40
+EVT00041,2026-02-10,ENT017,Support notes,release_review,Critical,Quality,backlog_age,44092,industrial portfolio margin signal 41
+EVT00042,2026-02-11,ENT018,ERP,automation_run,Critical,Quality,gross_margin,4198,industrial portfolio margin signal 42
+EVT00043,2026-02-12,ENT019,Support notes,stakeholder_request,High,Analytics,automation_savings,2140,industrial portfolio margin signal 43
+EVT00044,2026-02-13,ENT020,Data warehouse,stakeholder_request,Medium,Analytics,launch_readiness,53901,industrial portfolio margin signal 44
+EVT00045,2026-02-14,ENT021,Notebook,refresh_delay,Medium,Supply chain,gross_margin,2343,industrial portfolio margin signal 45
+EVT00046,2026-02-15,ENT022,CRM,stakeholder_request,Low,Product,metric_certification,23389,industrial portfolio margin signal 46
+EVT00047,2026-02-16,ENT023,CRM,release_review,Critical,Product,metric_certification,34507,industrial portfolio margin signal 47
+EVT00048,2026-02-17,ENT024,Sigma workbook,stakeholder_request,Medium,Supply chain,qa_defect_rate,24000,industrial portfolio margin signal 48
+EVT00049,2026-02-18,ENT001,Data warehouse,refresh_delay,Medium,Quality,qa_defect_rate,20230,industrial portfolio margin signal 49
+EVT00050,2026-02-19,ENT002,CRM,release_review,Medium,Product,gross_margin,6377,industrial portfolio margin signal 50
+EVT00051,2026-02-20,ENT003,Data warehouse,qa_failure,Low,Supply chain,gross_margin,39673,industrial portfolio margin signal 51
+EVT00052,2026-02-21,ENT004,ERP,qa_failure,Critical,Supply chain,gross_margin,41256,industrial portfolio margin signal 52
+EVT00053,2026-02-22,ENT005,Data warehouse,definition_change,Low,Operations,gross_margin,23137,industrial portfolio margin signal 53
+EVT00054,2026-02-23,ENT006,Support notes,refresh_delay,Medium,Sales,metric_certification,35520,industrial portfolio margin signal 54
+EVT00055,2026-02-24,ENT007,Data warehouse,release_review,Critical,Supply chain,launch_readiness,45254,industrial portfolio margin signal 55
+EVT00056,2026-02-25,ENT008,Sigma workbook,automation_run,Medium,Supply chain,automation_savings,29089,industrial portfolio margin signal 56
+EVT00057,2026-02-26,ENT009,Data warehouse,manual_override,Medium,Sales,automation_savings,20078,industrial portfolio margin signal 57
+EVT00058,2026-02-27,ENT010,Notebook,qa_failure,Medium,Operations,backlog_age,2608,industrial portfolio margin signal 58
+EVT00059,2026-02-28,ENT011,ERP,definition_change,Critical,Operations,metric_certification,27834,industrial portfolio margin signal 59
+EVT00060,2026-03-01,ENT012,CRM,manual_override,High,Sales,qa_defect_rate,632,industrial portfolio margin signal 60
+EVT00061,2026-03-02,ENT013,ERP,release_review,Critical,Product,metric_certification,40633,industrial portfolio margin signal 61
+EVT00062,2026-03-03,ENT014,ERP,refresh_delay,Critical,Analytics,qa_defect_rate,27075,industrial portfolio margin signal 62
+EVT00063,2026-03-04,ENT015,Notebook,qa_failure,Low,Operations,qa_defect_rate,61001,industrial portfolio margin signal 63
+EVT00064,2026-03-05,ENT016,Sigma workbook,release_review,Low,Supply chain,gross_margin,52798,industrial portfolio margin signal 64
+EVT00065,2026-03-06,ENT017,Support notes,automation_run,Critical,Operations,backlog_age,29277,industrial portfolio margin signal 65
+EVT00066,2026-03-07,ENT018,CRM,manual_override,Low,Analytics,metric_certification,56915,industrial portfolio margin signal 66
+EVT00067,2026-03-08,ENT019,Data warehouse,manual_override,High,Supply chain,metric_certification,48932,industrial portfolio margin signal 67
+EVT00068,2026-03-09,ENT020,Support notes,qa_failure,Low,Quality,launch_readiness,38858,industrial portfolio margin signal 68
+EVT00069,2026-03-10,ENT021,Sigma workbook,automation_run,Medium,Product,qa_defect_rate,6972,industrial portfolio margin signal 69
+EVT00070,2026-03-11,ENT022,CRM,manual_override,High,Operations,qa_defect_rate,15748,industrial portfolio margin signal 70
+EVT00071,2026-03-12,ENT023,CRM,qa_failure,Low,Analytics,metric_certification,37111,industrial portfolio margin signal 71
+EVT00072,2026-03-13,ENT024,Sigma workbook,definition_change,High,Supply chain,metric_certification,35065,industrial portfolio margin signal 72
+EVT00073,2026-03-14,ENT001,CRM,qa_failure,Medium,Product,automation_savings,4235,industrial portfolio margin signal 73
+EVT00074,2026-03-15,ENT002,Support notes,release_review,Low,Product,launch_readiness,249,industrial portfolio margin signal 74
+EVT00075,2026-03-16,ENT003,CRM,definition_change,Critical,Supply chain,automation_savings,46620,industrial portfolio margin signal 75
+EVT00076,2026-03-17,ENT004,Data warehouse,stakeholder_request,Critical,Sales,launch_readiness,51963,industrial portfolio margin signal 76
+EVT00077,2026-03-18,ENT005,Support notes,automation_run,Critical,Analytics,metric_certification,13558,industrial portfolio margin signal 77
+EVT00078,2026-03-19,ENT006,Sigma workbook,automation_run,Low,Analytics,qa_defect_rate,32124,industrial portfolio margin signal 78
+EVT00079,2026-03-20,ENT007,ERP,definition_change,Critical,Product,metric_certification,51748,industrial portfolio margin signal 79
+EVT00080,2026-03-21,ENT008,Data warehouse,stakeholder_request,Low,Sales,launch_readiness,43952,industrial portfolio margin signal 80
+EVT00081,2026-03-22,ENT009,Sigma workbook,refresh_delay,Low,Operations,gross_margin,23191,industrial portfolio margin signal 81
+EVT00082,2026-03-23,ENT010,Support notes,stakeholder_request,Low,Quality,launch_readiness,46369,industrial portfolio margin signal 82
+EVT00083,2026-03-24,ENT011,Sigma workbook,refresh_delay,Medium,Supply chain,gross_margin,38934,industrial portfolio margin signal 83
+EVT00084,2026-03-25,ENT012,Support notes,definition_change,High,Operations,metric_certification,31177,industrial portfolio margin signal 84
+EVT00085,2026-03-26,ENT013,CRM,automation_run,Critical,Operations,metric_certification,8295,industrial portfolio margin signal 85
+EVT00086,2026-03-27,ENT014,Notebook,stakeholder_request,Low,Product,metric_certification,53832,industrial portfolio margin signal 86
+EVT00087,2026-03-28,ENT015,Data warehouse,definition_change,High,Product,backlog_age,23114,industrial portfolio margin signal 87
+EVT00088,2026-03-29,ENT016,Notebook,manual_override,High,Operations,launch_readiness,23878,industrial portfolio margin signal 88
+EVT00089,2026-03-30,ENT017,Support notes,manual_override,High,Quality,backlog_age,3455,industrial portfolio margin signal 89
+EVT00090,2026-03-31,ENT018,Support notes,refresh_delay,Critical,Sales,automation_savings,44261,industrial portfolio margin signal 90
+EVT00091,2026-04-01,ENT019,Support notes,definition_change,Low,Sales,launch_readiness,21453,industrial portfolio margin signal 91
+EVT00092,2026-04-02,ENT020,Support notes,release_review,Critical,Product,metric_certification,59061,industrial portfolio margin signal 92
+EVT00093,2026-04-03,ENT021,ERP,refresh_delay,High,Quality,launch_readiness,8627,industrial portfolio margin signal 93
+EVT00094,2026-04-04,ENT022,CRM,refresh_delay,Medium,Quality,backlog_age,1670,industrial portfolio margin signal 94
+EVT00095,2026-04-05,ENT023,Sigma workbook,automation_run,Low,Operations,metric_certification,46442,industrial portfolio margin signal 95
+EVT00096,2026-04-06,ENT024,ERP,definition_change,High,Supply chain,qa_defect_rate,39637,industrial portfolio margin signal 96
+EVT00097,2026-04-07,ENT001,Notebook,qa_failure,Critical,Product,qa_defect_rate,38398,industrial portfolio margin signal 97
+EVT00098,2026-04-08,ENT002,Sigma workbook,qa_failure,Critical,Quality,gross_margin,32047,industrial portfolio margin signal 98
+EVT00099,2026-04-09,ENT003,CRM,stakeholder_request,High,Analytics,launch_readiness,56394,industrial portfolio margin signal 99
+EVT00100,2026-04-10,ENT004,Notebook,stakeholder_request,Low,Supply chain,launch_readiness,57728,industrial portfolio margin signal 100
+EVT00101,2026-04-11,ENT005,ERP,refresh_delay,Low,Sales,automation_savings,4703,industrial portfolio margin signal 101
+EVT00102,2026-04-12,ENT006,Sigma workbook,stakeholder_request,Critical,Product,launch_readiness,45606,industrial portfolio margin signal 102
+EVT00103,2026-04-13,ENT007,CRM,definition_change,Medium,Supply chain,qa_defect_rate,49254,industrial portfolio margin signal 103
+EVT00104,2026-04-14,ENT008,Support notes,stakeholder_request,Low,Supply chain,qa_defect_rate,24632,industrial portfolio margin signal 104
+EVT00105,2026-04-15,ENT009,Support notes,stakeholder_request,Low,Sales,automation_savings,52714,industrial portfolio margin signal 105
+EVT00106,2026-04-16,ENT010,Support notes,refresh_delay,Critical,Product,qa_defect_rate,47181,industrial portfolio margin signal 106
+EVT00107,2026-04-17,ENT011,Notebook,qa_failure,High,Supply chain,launch_readiness,51823,industrial portfolio margin signal 107
+EVT00108,2026-04-18,ENT012,Data warehouse,release_review,Critical,Operations,launch_readiness,32873,industrial portfolio margin signal 108
+EVT00109,2026-04-19,ENT013,CRM,automation_run,Critical,Sales,launch_readiness,48466,industrial portfolio margin signal 109
+EVT00110,2026-04-20,ENT014,Data warehouse,refresh_delay,Low,Sales,launch_readiness,43133,industrial portfolio margin signal 110
+EVT00111,2026-04-21,ENT015,CRM,automation_run,Medium,Operations,launch_readiness,4405,industrial portfolio margin signal 111
+EVT00112,2026-04-22,ENT016,Support notes,automation_run,Medium,Supply chain,metric_certification,24897,industrial portfolio margin signal 112
+EVT00113,2026-04-23,ENT017,Sigma workbook,refresh_delay,Medium,Operations,qa_defect_rate,15459,industrial portfolio margin signal 113
+EVT00114,2026-04-24,ENT018,Sigma workbook,stakeholder_request,Critical,Operations,backlog_age,60604,industrial portfolio margin signal 114
+EVT00115,2026-04-25,ENT019,Sigma workbook,definition_change,Low,Supply chain,metric_certification,36668,industrial portfolio margin signal 115
+EVT00116,2026-04-26,ENT020,Data warehouse,qa_failure,Critical,Quality,backlog_age,7927,industrial portfolio margin signal 116
+EVT00117,2026-04-27,ENT021,Support notes,qa_failure,Medium,Product,backlog_age,32866,industrial portfolio margin signal 117
+EVT00118,2026-04-28,ENT022,Support notes,manual_override,Low,Supply chain,qa_defect_rate,31189,industrial portfolio margin signal 118
+EVT00119,2026-04-29,ENT023,Data warehouse,manual_override,High,Analytics,metric_certification,19170,industrial portfolio margin signal 119
+EVT00120,2026-04-30,ENT024,Data warehouse,release_review,High,Operations,qa_defect_rate,9299,industrial portfolio margin signal 120
+EVT00121,2026-01-01,ENT001,Data warehouse,release_review,High,Product,gross_margin,29143,industrial portfolio margin signal 121
+EVT00122,2026-01-02,ENT002,Support notes,manual_override,Low,Operations,gross_margin,34844,industrial portfolio margin signal 122
+EVT00123,2026-01-03,ENT003,Notebook,manual_override,Medium,Quality,launch_readiness,1910,industrial portfolio margin signal 123
+EVT00124,2026-01-04,ENT004,CRM,release_review,High,Supply chain,qa_defect_rate,20176,industrial portfolio margin signal 124
+EVT00125,2026-01-05,ENT005,Sigma workbook,qa_failure,Critical,Quality,metric_certification,28849,industrial portfolio margin signal 125
+EVT00126,2026-01-06,ENT006,ERP,qa_failure,Low,Product,backlog_age,36367,industrial portfolio margin signal 126
+EVT00127,2026-01-07,ENT007,Support notes,manual_override,Critical,Quality,automation_savings,52484,industrial portfolio margin signal 127
+EVT00128,2026-01-08,ENT008,CRM,release_review,Critical,Sales,gross_margin,51592,industrial portfolio margin signal 128
+EVT00129,2026-01-09,ENT009,Data warehouse,qa_failure,Low,Sales,launch_readiness,46965,industrial portfolio margin signal 129
+EVT00130,2026-01-10,ENT010,ERP,automation_run,Medium,Sales,backlog_age,44093,industrial portfolio margin signal 130
+EVT00131,2026-01-11,ENT011,CRM,release_review,Low,Quality,automation_savings,51647,industrial portfolio margin signal 131
+EVT00132,2026-01-12,ENT012,ERP,refresh_delay,High,Sales,backlog_age,54922,industrial portfolio margin signal 132
+EVT00133,2026-01-13,ENT013,Sigma workbook,definition_change,Critical,Supply chain,backlog_age,2597,industrial portfolio margin signal 133
+EVT00134,2026-01-14,ENT014,ERP,stakeholder_request,Medium,Product,automation_savings,9060,industrial portfolio margin signal 134
+EVT00135,2026-01-15,ENT015,Support notes,stakeholder_request,Low,Supply chain,metric_certification,4030,industrial portfolio margin signal 135
+EVT00136,2026-01-16,ENT016,ERP,stakeholder_request,Low,Quality,metric_certification,16665,industrial portfolio margin signal 136
+EVT00137,2026-01-17,ENT017,ERP,manual_override,Critical,Analytics,automation_savings,23881,industrial portfolio margin signal 137
+EVT00138,2026-01-18,ENT018,Support notes,refresh_delay,High,Sales,qa_defect_rate,22434,industrial portfolio margin signal 138
+EVT00139,2026-01-19,ENT019,CRM,release_review,Medium,Product,automation_savings,58358,industrial portfolio margin signal 139
+EVT00140,2026-01-20,ENT020,Data warehouse,definition_change,Medium,Quality,launch_readiness,41601,industrial portfolio margin signal 140
+EVT00141,2026-01-21,ENT021,Support notes,automation_run,Critical,Supply chain,automation_savings,28568,industrial portfolio margin signal 141
+EVT00142,2026-01-22,ENT022,Sigma workbook,qa_failure,Critical,Operations,automation_savings,5514,industrial portfolio margin signal 142
+EVT00143,2026-01-23,ENT023,Data warehouse,definition_change,High,Analytics,automation_savings,51229,industrial portfolio margin signal 143
+EVT00144,2026-01-24,ENT024,Notebook,stakeholder_request,High,Quality,automation_savings,52474,industrial portfolio margin signal 144
+EVT00145,2026-01-25,ENT001,ERP,stakeholder_request,Low,Operations,gross_margin,5690,industrial portfolio margin signal 145
+EVT00146,2026-01-26,ENT002,Data warehouse,automation_run,High,Analytics,automation_savings,7866,industrial portfolio margin signal 146
+EVT00147,2026-01-27,ENT003,Support notes,qa_failure,High,Supply chain,launch_readiness,61865,industrial portfolio margin signal 147
+EVT00148,2026-01-28,ENT004,ERP,stakeholder_request,Critical,Product,metric_certification,35839,industrial portfolio margin signal 148
+EVT00149,2026-01-29,ENT005,CRM,definition_change,Medium,Analytics,gross_margin,6731,industrial portfolio margin signal 149
+EVT00150,2026-01-30,ENT006,ERP,manual_override,Low,Sales,backlog_age,60008,industrial portfolio margin signal 150
+EVT00151,2026-01-31,ENT007,Support notes,manual_override,Low,Quality,qa_defect_rate,56602,industrial portfolio margin signal 151
+EVT00152,2026-02-01,ENT008,Notebook,definition_change,Medium,Analytics,gross_margin,28385,industrial portfolio margin signal 152
+EVT00153,2026-02-02,ENT009,CRM,manual_override,High,Product,qa_defect_rate,32200,industrial portfolio margin signal 153
+EVT00154,2026-02-03,ENT010,Sigma workbook,release_review,Medium,Supply chain,backlog_age,14483,industrial portfolio margin signal 154
+EVT00155,2026-02-04,ENT011,Data warehouse,release_review,Medium,Supply chain,metric_certification,48549,industrial portfolio margin signal 155
+EVT00156,2026-02-05,ENT012,Sigma workbook,definition_change,Critical,Sales,launch_readiness,29656,industrial portfolio margin signal 156
+EVT00157,2026-02-06,ENT013,ERP,stakeholder_request,High,Quality,backlog_age,61536,industrial portfolio margin signal 157
+EVT00158,2026-02-07,ENT014,Notebook,refresh_delay,Critical,Quality,qa_defect_rate,57026,industrial portfolio margin signal 158
+EVT00159,2026-02-08,ENT015,ERP,manual_override,Low,Analytics,backlog_age,28713,industrial portfolio margin signal 159
+EVT00160,2026-02-09,ENT016,Support notes,definition_change,Low,Operations,backlog_age,27111,industrial portfolio margin signal 160
+EVT00161,2026-02-10,ENT017,CRM,manual_override,Critical,Analytics,launch_readiness,40391,industrial portfolio margin signal 161
+EVT00162,2026-02-11,ENT018,Sigma workbook,release_review,High,Quality,launch_readiness,28597,industrial portfolio margin signal 162
+EVT00163,2026-02-12,ENT019,CRM,stakeholder_request,Low,Supply chain,qa_defect_rate,40441,industrial portfolio margin signal 163
+EVT00164,2026-02-13,ENT020,Notebook,stakeholder_request,Critical,Operations,gross_margin,9560,industrial portfolio margin signal 164
+EVT00165,2026-02-14,ENT021,Sigma workbook,definition_change,High,Sales,backlog_age,11246,industrial portfolio margin signal 165
+EVT00166,2026-02-15,ENT022,Notebook,manual_override,Low,Quality,launch_readiness,37260,industrial portfolio margin signal 166
+EVT00167,2026-02-16,ENT023,CRM,qa_failure,Low,Supply chain,metric_certification,25330,industrial portfolio margin signal 167
+EVT00168,2026-02-17,ENT024,Notebook,refresh_delay,Medium,Quality,qa_defect_rate,30955,industrial portfolio margin signal 168
+EVT00169,2026-02-18,ENT001,Data warehouse,refresh_delay,High,Product,qa_defect_rate,15480,industrial portfolio margin signal 169
+EVT00170,2026-02-19,ENT002,Sigma workbook,refresh_delay,High,Supply chain,launch_readiness,4870,industrial portfolio margin signal 170
+EVT00171,2026-02-20,ENT003,Sigma workbook,definition_change,Low,Supply chain,metric_certification,60355,industrial portfolio margin signal 171
+EVT00172,2026-02-21,ENT004,Notebook,automation_run,Critical,Product,launch_readiness,14657,industrial portfolio margin signal 172
+EVT00173,2026-02-22,ENT005,Support notes,qa_failure,Low,Quality,qa_defect_rate,14810,industrial portfolio margin signal 173
+EVT00174,2026-02-23,ENT006,Data warehouse,definition_change,Low,Analytics,metric_certification,7814,industrial portfolio margin signal 174
+EVT00175,2026-02-24,ENT007,Notebook,definition_change,Low,Analytics,metric_certification,56588,industrial portfolio margin signal 175
+EVT00176,2026-02-25,ENT008,Support notes,automation_run,Critical,Analytics,automation_savings,41890,industrial portfolio margin signal 176
+EVT00177,2026-02-26,ENT009,Support notes,manual_override,Critical,Product,gross_margin,18032,industrial portfolio margin signal 177
+EVT00178,2026-02-27,ENT010,CRM,automation_run,Low,Product,automation_savings,48359,industrial portfolio margin signal 178
+EVT00179,2026-02-28,ENT011,ERP,release_review,High,Operations,backlog_age,35059,industrial portfolio margin signal 179
+EVT00180,2026-03-01,ENT012,Notebook,refresh_delay,Low,Supply chain,backlog_age,8820,industrial portfolio margin signal 180
+EVT00181,2026-03-02,ENT013,Notebook,qa_failure,High,Product,qa_defect_rate,41192,industrial portfolio margin signal 181
+EVT00182,2026-03-03,ENT014,Support notes,release_review,Critical,Analytics,metric_certification,301,industrial portfolio margin signal 182
+EVT00183,2026-03-04,ENT015,Data warehouse,qa_failure,Medium,Operations,automation_savings,50134,industrial portfolio margin signal 183
+EVT00184,2026-03-05,ENT016,Notebook,release_review,Medium,Sales,qa_defect_rate,15712,industrial portfolio margin signal 184
+EVT00185,2026-03-06,ENT017,CRM,manual_override,Medium,Product,automation_savings,25155,industrial portfolio margin signal 185
+EVT00186,2026-03-07,ENT018,Notebook,refresh_delay,Medium,Sales,backlog_age,38798,industrial portfolio margin signal 186
+EVT00187,2026-03-08,ENT019,Data warehouse,automation_run,High,Operations,metric_certification,8310,industrial portfolio margin signal 187
+EVT00188,2026-03-09,ENT020,ERP,automation_run,High,Quality,automation_savings,771,industrial portfolio margin signal 188
+EVT00189,2026-03-10,ENT021,Sigma workbook,stakeholder_request,Medium,Analytics,gross_margin,20443,industrial portfolio margin signal 189
+EVT00190,2026-03-11,ENT022,Data warehouse,stakeholder_request,Critical,Supply chain,backlog_age,5000,industrial portfolio margin signal 190
+EVT00191,2026-03-12,ENT023,Notebook,refresh_delay,Medium,Product,automation_savings,2182,industrial portfolio margin signal 191
+EVT00192,2026-03-13,ENT024,Data warehouse,definition_change,Critical,Quality,gross_margin,44088,industrial portfolio margin signal 192
+EVT00193,2026-03-14,ENT001,CRM,refresh_delay,Low,Supply chain,launch_readiness,19584,industrial portfolio margin signal 193
+EVT00194,2026-03-15,ENT002,Data warehouse,definition_change,High,Operations,gross_margin,60546,industrial portfolio margin signal 194
+EVT00195,2026-03-16,ENT003,Sigma workbook,automation_run,Medium,Analytics,backlog_age,44018,industrial portfolio margin signal 195
+EVT00196,2026-03-17,ENT004,Sigma workbook,definition_change,Critical,Operations,backlog_age,40207,industrial portfolio margin signal 196
+EVT00197,2026-03-18,ENT005,CRM,definition_change,Low,Product,metric_certification,56736,industrial portfolio margin signal 197
+EVT00198,2026-03-19,ENT006,CRM,definition_change,High,Product,automation_savings,28953,industrial portfolio margin signal 198
+EVT00199,2026-03-20,ENT007,Sigma workbook,qa_failure,Critical,Operations,gross_margin,4635,industrial portfolio margin signal 199
+EVT00200,2026-03-21,ENT008,Data warehouse,automation_run,Low,Analytics,backlog_age,40811,industrial portfolio margin signal 200
+EVT00201,2026-03-22,ENT009,ERP,definition_change,Critical,Sales,metric_certification,16797,industrial portfolio margin signal 201
+EVT00202,2026-03-23,ENT010,Sigma workbook,manual_override,High,Quality,gross_margin,26867,industrial portfolio margin signal 202
+EVT00203,2026-03-24,ENT011,CRM,definition_change,High,Supply chain,gross_margin,5462,industrial portfolio margin signal 203
+EVT00204,2026-03-25,ENT012,Support notes,qa_failure,High,Supply chain,metric_certification,27998,industrial portfolio margin signal 204
+EVT00205,2026-03-26,ENT013,Notebook,definition_change,Medium,Operations,gross_margin,21657,industrial portfolio margin signal 205
+EVT00206,2026-03-27,ENT014,Sigma workbook,automation_run,Medium,Operations,backlog_age,30119,industrial portfolio margin signal 206
+EVT00207,2026-03-28,ENT015,Sigma workbook,stakeholder_request,Low,Operations,backlog_age,24296,industrial portfolio margin signal 207
+EVT00208,2026-03-29,ENT016,Notebook,release_review,High,Operations,gross_margin,47798,industrial portfolio margin signal 208
+EVT00209,2026-03-30,ENT017,Notebook,automation_run,Critical,Product,qa_defect_rate,30152,industrial portfolio margin signal 209
+EVT00210,2026-03-31,ENT018,Notebook,release_review,Low,Supply chain,metric_certification,47903,industrial portfolio margin signal 210
+EVT00211,2026-04-01,ENT019,CRM,definition_change,Critical,Sales,qa_defect_rate,16228,industrial portfolio margin signal 211
+EVT00212,2026-04-02,ENT020,Data warehouse,stakeholder_request,Low,Operations,gross_margin,22191,industrial portfolio margin signal 212
+EVT00213,2026-04-03,ENT021,Sigma workbook,definition_change,Medium,Supply chain,launch_readiness,15143,industrial portfolio margin signal 213
+EVT00214,2026-04-04,ENT022,Sigma workbook,automation_run,Critical,Supply chain,launch_readiness,37448,industrial portfolio margin signal 214
+EVT00215,2026-04-05,ENT023,ERP,manual_override,High,Quality,automation_savings,53932,industrial portfolio margin signal 215
+EVT00216,2026-04-06,ENT024,ERP,refresh_delay,Medium,Sales,gross_margin,45297,industrial portfolio margin signal 216
+EVT00217,2026-04-07,ENT001,Data warehouse,automation_run,Critical,Supply chain,gross_margin,36030,industrial portfolio margin signal 217
+EVT00218,2026-04-08,ENT002,CRM,refresh_delay,Critical,Analytics,launch_readiness,54953,industrial portfolio margin signal 218
+EVT00219,2026-04-09,ENT003,Notebook,definition_change,Medium,Product,metric_certification,53499,industrial portfolio margin signal 219
+EVT00220,2026-04-10,ENT004,Data warehouse,manual_override,Critical,Sales,backlog_age,48213,industrial portfolio margin signal 220
+EVT00221,2026-04-11,ENT005,Notebook,refresh_delay,Critical,Supply chain,backlog_age,20745,industrial portfolio margin signal 221
+EVT00222,2026-04-12,ENT006,ERP,qa_failure,High,Analytics,qa_defect_rate,23063,industrial portfolio margin signal 222
+EVT00223,2026-04-13,ENT007,Support notes,stakeholder_request,High,Quality,launch_readiness,15437,industrial portfolio margin signal 223
+EVT00224,2026-04-14,ENT008,Support notes,automation_run,Medium,Sales,metric_certification,9983,industrial portfolio margin signal 224
+EVT00225,2026-04-15,ENT009,Sigma workbook,automation_run,Critical,Quality,automation_savings,946,industrial portfolio margin signal 225
+EVT00226,2026-04-16,ENT010,Notebook,automation_run,Critical,Product,metric_certification,44497,industrial portfolio margin signal 226
+EVT00227,2026-04-17,ENT011,Sigma workbook,stakeholder_request,High,Operations,automation_savings,37141,industrial portfolio margin signal 227
+EVT00228,2026-04-18,ENT012,Support notes,automation_run,Critical,Quality,backlog_age,33019,industrial portfolio margin signal 228
+EVT00229,2026-04-19,ENT013,CRM,refresh_delay,Critical,Sales,automation_savings,56696,industrial portfolio margin signal 229
+EVT00230,2026-04-20,ENT014,ERP,automation_run,Medium,Product,metric_certification,22329,industrial portfolio margin signal 230
+EVT00231,2026-04-21,ENT015,Sigma workbook,qa_failure,Medium,Quality,qa_defect_rate,34849,industrial portfolio margin signal 231
+EVT00232,2026-04-22,ENT016,CRM,stakeholder_request,Medium,Quality,launch_readiness,35036,industrial portfolio margin signal 232
+EVT00233,2026-04-23,ENT017,Support notes,automation_run,Medium,Product,qa_defect_rate,32614,industrial portfolio margin signal 233
+EVT00234,2026-04-24,ENT018,ERP,release_review,Critical,Supply chain,metric_certification,12350,industrial portfolio margin signal 234
+EVT00235,2026-04-25,ENT019,Notebook,manual_override,Medium,Operations,backlog_age,42746,industrial portfolio margin signal 235
+EVT00236,2026-04-26,ENT020,Sigma workbook,definition_change,Critical,Operations,automation_savings,49122,industrial portfolio margin signal 236
+EVT00237,2026-04-27,ENT021,ERP,stakeholder_request,Low,Operations,backlog_age,17094,industrial portfolio margin signal 237
+EVT00238,2026-04-28,ENT022,Sigma workbook,qa_failure,Critical,Analytics,metric_certification,6036,industrial portfolio margin signal 238
+EVT00239,2026-04-29,ENT023,Sigma workbook,release_review,Critical,Product,gross_margin,35635,industrial portfolio margin signal 239
+EVT00240,2026-04-30,ENT024,Notebook,qa_failure,Critical,Sales,backlog_age,16394,industrial portfolio margin signal 240
+EVT00241,2026-01-01,ENT001,ERP,release_review,Medium,Operations,metric_certification,35211,industrial portfolio margin signal 241
+EVT00242,2026-01-02,ENT002,Support notes,stakeholder_request,Critical,Quality,launch_readiness,11766,industrial portfolio margin signal 242
+EVT00243,2026-01-03,ENT003,Support notes,refresh_delay,Critical,Sales,gross_margin,18869,industrial portfolio margin signal 243
+EVT00244,2026-01-04,ENT004,Data warehouse,release_review,Critical,Sales,backlog_age,844,industrial portfolio margin signal 244
+EVT00245,2026-01-05,ENT005,Sigma workbook,release_review,Low,Operations,gross_margin,8898,industrial portfolio margin signal 245
+EVT00246,2026-01-06,ENT006,Data warehouse,refresh_delay,Critical,Quality,automation_savings,473,industrial portfolio margin signal 246
+EVT00247,2026-01-07,ENT007,Notebook,definition_change,Low,Product,gross_margin,13710,industrial portfolio margin signal 247
+EVT00248,2026-01-08,ENT008,Notebook,definition_change,High,Quality,backlog_age,20730,industrial portfolio margin signal 248
+EVT00249,2026-01-09,ENT009,ERP,definition_change,Medium,Quality,metric_certification,46365,industrial portfolio margin signal 249
+EVT00250,2026-01-10,ENT010,CRM,automation_run,Critical,Analytics,qa_defect_rate,25606,industrial portfolio margin signal 250
+EVT00251,2026-01-11,ENT011,CRM,release_review,Medium,Quality,metric_certification,68,industrial portfolio margin signal 251
+EVT00252,2026-01-12,ENT012,Notebook,stakeholder_request,Medium,Product,automation_savings,54263,industrial portfolio margin signal 252
+EVT00253,2026-01-13,ENT013,CRM,qa_failure,Medium,Operations,automation_savings,7185,industrial portfolio margin signal 253
+EVT00254,2026-01-14,ENT014,Data warehouse,manual_override,High,Sales,gross_margin,21579,industrial portfolio margin signal 254
+EVT00255,2026-01-15,ENT015,Support notes,automation_run,Critical,Product,qa_defect_rate,2571,industrial portfolio margin signal 255
+EVT00256,2026-01-16,ENT016,Data warehouse,refresh_delay,Critical,Operations,automation_savings,33676,industrial portfolio margin signal 256
+EVT00257,2026-01-17,ENT017,Data warehouse,qa_failure,Low,Sales,qa_defect_rate,16372,industrial portfolio margin signal 257
+EVT00258,2026-01-18,ENT018,Sigma workbook,refresh_delay,Medium,Sales,gross_margin,24448,industrial portfolio margin signal 258
+EVT00259,2026-01-19,ENT019,CRM,stakeholder_request,Medium,Sales,gross_margin,10066,industrial portfolio margin signal 259
+EVT00260,2026-01-20,ENT020,ERP,stakeholder_request,Medium,Sales,launch_readiness,13597,industrial portfolio margin signal 260
+EVT00261,2026-01-21,ENT021,Data warehouse,definition_change,Medium,Supply chain,qa_defect_rate,6222,industrial portfolio margin signal 261
+EVT00262,2026-01-22,ENT022,Notebook,release_review,High,Sales,metric_certification,9096,industrial portfolio margin signal 262
+EVT00263,2026-01-23,ENT023,Notebook,manual_override,Low,Product,gross_margin,38441,industrial portfolio margin signal 263
+EVT00264,2026-01-24,ENT024,Data warehouse,release_review,Medium,Sales,automation_savings,17927,industrial portfolio margin signal 264
+EVT00265,2026-01-25,ENT001,Sigma workbook,refresh_delay,Medium,Quality,backlog_age,21231,industrial portfolio margin signal 265
+EVT00266,2026-01-26,ENT002,Support notes,release_review,Low,Analytics,qa_defect_rate,24686,industrial portfolio margin signal 266
+EVT00267,2026-01-27,ENT003,Support notes,automation_run,Critical,Supply chain,metric_certification,26893,industrial portfolio margin signal 267
+EVT00268,2026-01-28,ENT004,Support notes,stakeholder_request,Critical,Supply chain,automation_savings,61024,industrial portfolio margin signal 268
+EVT00269,2026-01-29,ENT005,Support notes,stakeholder_request,Critical,Analytics,qa_defect_rate,46572,industrial portfolio margin signal 269
+EVT00270,2026-01-30,ENT006,Notebook,automation_run,Critical,Product,qa_defect_rate,8617,industrial portfolio margin signal 270
+EVT00271,2026-01-31,ENT007,Data warehouse,qa_failure,Low,Operations,qa_defect_rate,1454,industrial portfolio margin signal 271
+EVT00272,2026-02-01,ENT008,Notebook,automation_run,Medium,Sales,metric_certification,33316,industrial portfolio margin signal 272
+EVT00273,2026-02-02,ENT009,CRM,refresh_delay,Low,Sales,gross_margin,41863,industrial portfolio margin signal 273
+EVT00274,2026-02-03,ENT010,ERP,release_review,Medium,Product,qa_defect_rate,22680,industrial portfolio margin signal 274
+EVT00275,2026-02-04,ENT011,ERP,refresh_delay,High,Operations,qa_defect_rate,9997,industrial portfolio margin signal 275
+EVT00276,2026-02-05,ENT012,Data warehouse,qa_failure,High,Operations,qa_defect_rate,9114,industrial portfolio margin signal 276
+EVT00277,2026-02-06,ENT013,Support notes,stakeholder_request,Medium,Operations,backlog_age,56287,industrial portfolio margin signal 277
+EVT00278,2026-02-07,ENT014,ERP,automation_run,High,Sales,gross_margin,43770,industrial portfolio margin signal 278
+EVT00279,2026-02-08,ENT015,ERP,stakeholder_request,Medium,Product,metric_certification,14621,industrial portfolio margin signal 279
+EVT00280,2026-02-09,ENT016,Data warehouse,stakeholder_request,Critical,Supply chain,launch_readiness,47016,industrial portfolio margin signal 280
+EVT00281,2026-02-10,ENT017,Notebook,manual_override,Critical,Operations,automation_savings,53194,industrial portfolio margin signal 281
+EVT00282,2026-02-11,ENT018,ERP,stakeholder_request,Low,Product,qa_defect_rate,52858,industrial portfolio margin signal 282
+EVT00283,2026-02-12,ENT019,ERP,automation_run,High,Analytics,backlog_age,51312,industrial portfolio margin signal 283
+EVT00284,2026-02-13,ENT020,Support notes,refresh_delay,Critical,Analytics,metric_certification,40651,industrial portfolio margin signal 284
+EVT00285,2026-02-14,ENT021,Data warehouse,manual_override,High,Quality,qa_defect_rate,1975,industrial portfolio margin signal 285
+EVT00286,2026-02-15,ENT022,Sigma workbook,definition_change,Critical,Product,automation_savings,50360,industrial portfolio margin signal 286
+EVT00287,2026-02-16,ENT023,Notebook,automation_run,Low,Operations,backlog_age,37118,industrial portfolio margin signal 287
+EVT00288,2026-02-17,ENT024,Sigma workbook,release_review,Medium,Product,backlog_age,53616,industrial portfolio margin signal 288
+EVT00289,2026-02-18,ENT001,Sigma workbook,manual_override,High,Sales,qa_defect_rate,51276,industrial portfolio margin signal 289
+EVT00290,2026-02-19,ENT002,Sigma workbook,release_review,Medium,Sales,qa_defect_rate,59894,industrial portfolio margin signal 290
+EVT00291,2026-02-20,ENT003,CRM,refresh_delay,Low,Analytics,metric_certification,30517,industrial portfolio margin signal 291
+EVT00292,2026-02-21,ENT004,Support notes,release_review,High,Product,backlog_age,23036,industrial portfolio margin signal 292
+EVT00293,2026-02-22,ENT005,Support notes,refresh_delay,Medium,Analytics,backlog_age,39857,industrial portfolio margin signal 293
+EVT00294,2026-02-23,ENT006,Sigma workbook,automation_run,High,Analytics,launch_readiness,58430,industrial portfolio margin signal 294
+EVT00295,2026-02-24,ENT007,CRM,stakeholder_request,Low,Quality,automation_savings,15352,industrial portfolio margin signal 295
+EVT00296,2026-02-25,ENT008,Sigma workbook,automation_run,Medium,Sales,launch_readiness,9276,industrial portfolio margin signal 296
+EVT00297,2026-02-26,ENT009,Data warehouse,automation_run,Medium,Sales,metric_certification,18418,industrial portfolio margin signal 297
+EVT00298,2026-02-27,ENT010,CRM,automation_run,Medium,Sales,gross_margin,18785,industrial portfolio margin signal 298
+EVT00299,2026-02-28,ENT011,Notebook,refresh_delay,High,Sales,gross_margin,14006,industrial portfolio margin signal 299
+EVT00300,2026-03-01,ENT012,ERP,refresh_delay,High,Analytics,backlog_age,215,industrial portfolio margin signal 300
+EVT00301,2026-03-02,ENT013,Data warehouse,stakeholder_request,Critical,Product,metric_certification,47087,industrial portfolio margin signal 301
+EVT00302,2026-03-03,ENT014,CRM,stakeholder_request,Low,Product,qa_defect_rate,2456,industrial portfolio margin signal 302
+EVT00303,2026-03-04,ENT015,ERP,definition_change,High,Supply chain,metric_certification,34023,industrial portfolio margin signal 303
+EVT00304,2026-03-05,ENT016,Support notes,stakeholder_request,Low,Operations,qa_defect_rate,13772,industrial portfolio margin signal 304
+EVT00305,2026-03-06,ENT017,Support notes,refresh_delay,High,Quality,gross_margin,12283,industrial portfolio margin signal 305
+EVT00306,2026-03-07,ENT018,ERP,refresh_delay,Medium,Sales,metric_certification,54923,industrial portfolio margin signal 306
+EVT00307,2026-03-08,ENT019,Support notes,refresh_delay,Low,Analytics,metric_certification,34096,industrial portfolio margin signal 307
+EVT00308,2026-03-09,ENT020,CRM,release_review,Critical,Quality,gross_margin,2881,industrial portfolio margin signal 308
+EVT00309,2026-03-10,ENT021,Notebook,automation_run,Low,Sales,qa_defect_rate,20714,industrial portfolio margin signal 309
+EVT00310,2026-03-11,ENT022,Data warehouse,release_review,Low,Product,gross_margin,27348,industrial portfolio margin signal 310
+EVT00311,2026-03-12,ENT023,CRM,automation_run,Critical,Analytics,metric_certification,33365,industrial portfolio margin signal 311
+EVT00312,2026-03-13,ENT024,Data warehouse,manual_override,Critical,Sales,qa_defect_rate,58730,industrial portfolio margin signal 312
+EVT00313,2026-03-14,ENT001,ERP,stakeholder_request,High,Analytics,metric_certification,7072,industrial portfolio margin signal 313
+EVT00314,2026-03-15,ENT002,Sigma workbook,automation_run,Critical,Supply chain,backlog_age,6404,industrial portfolio margin signal 314
+EVT00315,2026-03-16,ENT003,Support notes,automation_run,Medium,Product,gross_margin,54169,industrial portfolio margin signal 315
+EVT00316,2026-03-17,ENT004,Sigma workbook,manual_override,Medium,Operations,automation_savings,44597,industrial portfolio margin signal 316
+EVT00317,2026-03-18,ENT005,Data warehouse,release_review,High,Product,metric_certification,42819,industrial portfolio margin signal 317
+EVT00318,2026-03-19,ENT006,CRM,manual_override,High,Product,launch_readiness,50759,industrial portfolio margin signal 318
+EVT00319,2026-03-20,ENT007,Notebook,definition_change,Critical,Supply chain,launch_readiness,22181,industrial portfolio margin signal 319
+EVT00320,2026-03-21,ENT008,Notebook,automation_run,Low,Sales,metric_certification,23746,industrial portfolio margin signal 320
+EVT00321,2026-03-22,ENT009,Sigma workbook,definition_change,Low,Operations,automation_savings,44590,industrial portfolio margin signal 321
+EVT00322,2026-03-23,ENT010,CRM,definition_change,Critical,Sales,launch_readiness,39897,industrial portfolio margin signal 322
+EVT00323,2026-03-24,ENT011,ERP,manual_override,High,Quality,automation_savings,57764,industrial portfolio margin signal 323
+EVT00324,2026-03-25,ENT012,CRM,manual_override,Low,Operations,automation_savings,55949,industrial portfolio margin signal 324
+EVT00325,2026-03-26,ENT013,ERP,release_review,Critical,Supply chain,gross_margin,59735,industrial portfolio margin signal 325
+EVT00326,2026-03-27,ENT014,ERP,refresh_delay,High,Quality,launch_readiness,7104,industrial portfolio margin signal 326
+EVT00327,2026-03-28,ENT015,CRM,automation_run,Medium,Analytics,automation_savings,42990,industrial portfolio margin signal 327
+EVT00328,2026-03-29,ENT016,CRM,stakeholder_request,Critical,Operations,backlog_age,44366,industrial portfolio margin signal 328
+EVT00329,2026-03-30,ENT017,Sigma workbook,qa_failure,Critical,Product,gross_margin,13460,industrial portfolio margin signal 329
+EVT00330,2026-03-31,ENT018,CRM,manual_override,Low,Supply chain,metric_certification,27026,industrial portfolio margin signal 330
+EVT00331,2026-04-01,ENT019,Data warehouse,qa_failure,Critical,Quality,metric_certification,13709,industrial portfolio margin signal 331
+EVT00332,2026-04-02,ENT020,Notebook,qa_failure,Critical,Quality,launch_readiness,4626,industrial portfolio margin signal 332
+EVT00333,2026-04-03,ENT021,ERP,definition_change,High,Sales,launch_readiness,33104,industrial portfolio margin signal 333
+EVT00334,2026-04-04,ENT022,Sigma workbook,refresh_delay,High,Quality,qa_defect_rate,29615,industrial portfolio margin signal 334
+EVT00335,2026-04-05,ENT023,CRM,stakeholder_request,Critical,Quality,launch_readiness,13205,industrial portfolio margin signal 335
+EVT00336,2026-04-06,ENT024,CRM,refresh_delay,Low,Analytics,automation_savings,12415,industrial portfolio margin signal 336
+EVT00337,2026-04-07,ENT001,ERP,manual_override,Critical,Product,metric_certification,48087,industrial portfolio margin signal 337
+EVT00338,2026-04-08,ENT002,CRM,stakeholder_request,Critical,Sales,metric_certification,36293,industrial portfolio margin signal 338
+EVT00339,2026-04-09,ENT003,Notebook,definition_change,Critical,Supply chain,gross_margin,27193,industrial portfolio margin signal 339
+EVT00340,2026-04-10,ENT004,Support notes,stakeholder_request,Medium,Quality,metric_certification,15493,industrial portfolio margin signal 340
+EVT00341,2026-04-11,ENT005,Data warehouse,release_review,Critical,Sales,automation_savings,28970,industrial portfolio margin signal 341
+EVT00342,2026-04-12,ENT006,Data warehouse,refresh_delay,High,Operations,gross_margin,12640,industrial portfolio margin signal 342
+EVT00343,2026-04-13,ENT007,Notebook,stakeholder_request,Medium,Product,metric_certification,159,industrial portfolio margin signal 343
+EVT00344,2026-04-14,ENT008,Sigma workbook,release_review,High,Supply chain,gross_margin,5941,industrial portfolio margin signal 344
+EVT00345,2026-04-15,ENT009,Data warehouse,stakeholder_request,Medium,Quality,gross_margin,59969,industrial portfolio margin signal 345
+EVT00346,2026-04-16,ENT010,ERP,release_review,Low,Operations,qa_defect_rate,19333,industrial portfolio margin signal 346
+EVT00347,2026-04-17,ENT011,Sigma workbook,automation_run,Low,Sales,metric_certification,56997,industrial portfolio margin signal 347
+EVT00348,2026-04-18,ENT012,ERP,qa_failure,Critical,Operations,backlog_age,56841,industrial portfolio margin signal 348
+EVT00349,2026-04-19,ENT013,Notebook,manual_override,High,Operations,gross_margin,58968,industrial portfolio margin signal 349
+EVT00350,2026-04-20,ENT014,Notebook,qa_failure,Critical,Quality,automation_savings,41599,industrial portfolio margin signal 350
+EVT00351,2026-04-21,ENT015,CRM,refresh_delay,Medium,Quality,metric_certification,309,industrial portfolio margin signal 351
+EVT00352,2026-04-22,ENT016,ERP,automation_run,Critical,Sales,metric_certification,37451,industrial portfolio margin signal 352
+EVT00353,2026-04-23,ENT017,Notebook,definition_change,High,Sales,metric_certification,12717,industrial portfolio margin signal 353
+EVT00354,2026-04-24,ENT018,Notebook,refresh_delay,High,Operations,gross_margin,54938,industrial portfolio margin signal 354
+EVT00355,2026-04-25,ENT019,CRM,qa_failure,Low,Supply chain,automation_savings,4592,industrial portfolio margin signal 355
+EVT00356,2026-04-26,ENT020,CRM,manual_override,High,Supply chain,gross_margin,60469,industrial portfolio margin signal 356
+EVT00357,2026-04-27,ENT021,Sigma workbook,manual_override,High,Operations,launch_readiness,45461,industrial portfolio margin signal 357
+EVT00358,2026-04-28,ENT022,Support notes,release_review,Low,Supply chain,qa_defect_rate,17257,industrial portfolio margin signal 358
+EVT00359,2026-04-29,ENT023,Data warehouse,refresh_delay,Medium,Product,qa_defect_rate,28330,industrial portfolio margin signal 359
+EVT00360,2026-04-30,ENT024,Data warehouse,manual_override,High,Supply chain,automation_savings,50027,industrial portfolio margin signal 360
+EVT00361,2026-01-01,ENT001,CRM,manual_override,Critical,Operations,gross_margin,11141,industrial portfolio margin signal 361
+EVT00362,2026-01-02,ENT002,Data warehouse,manual_override,High,Supply chain,backlog_age,35308,industrial portfolio margin signal 362
+EVT00363,2026-01-03,ENT003,Notebook,release_review,Low,Analytics,qa_defect_rate,51119,industrial portfolio margin signal 363
+EVT00364,2026-01-04,ENT004,Data warehouse,stakeholder_request,High,Quality,gross_margin,41756,industrial portfolio margin signal 364
+EVT00365,2026-01-05,ENT005,CRM,stakeholder_request,Low,Supply chain,metric_certification,34583,industrial portfolio margin signal 365
+EVT00366,2026-01-06,ENT006,Sigma workbook,stakeholder_request,Medium,Sales,qa_defect_rate,23701,industrial portfolio margin signal 366
+EVT00367,2026-01-07,ENT007,ERP,manual_override,Critical,Quality,backlog_age,20282,industrial portfolio margin signal 367
+EVT00368,2026-01-08,ENT008,Notebook,qa_failure,Low,Operations,backlog_age,37414,industrial portfolio margin signal 368
+EVT00369,2026-01-09,ENT009,Support notes,release_review,Critical,Sales,qa_defect_rate,18486,industrial portfolio margin signal 369
+EVT00370,2026-01-10,ENT010,ERP,manual_override,Medium,Operations,qa_defect_rate,34030,industrial portfolio margin signal 370
+EVT00371,2026-01-11,ENT011,Support notes,automation_run,High,Sales,metric_certification,2785,industrial portfolio margin signal 371
+EVT00372,2026-01-12,ENT012,Notebook,release_review,Critical,Operations,backlog_age,33815,industrial portfolio margin signal 372
+EVT00373,2026-01-13,ENT013,Support notes,manual_override,High,Sales,metric_certification,37421,industrial portfolio margin signal 373
+EVT00374,2026-01-14,ENT014,Data warehouse,automation_run,Critical,Supply chain,launch_readiness,14593,industrial portfolio margin signal 374
+EVT00375,2026-01-15,ENT015,ERP,qa_failure,Medium,Operations,qa_defect_rate,46639,industrial portfolio margin signal 375
+EVT00376,2026-01-16,ENT016,CRM,automation_run,High,Product,metric_certification,40138,industrial portfolio margin signal 376
+EVT00377,2026-01-17,ENT017,Sigma workbook,refresh_delay,High,Supply chain,automation_savings,7501,industrial portfolio margin signal 377
+EVT00378,2026-01-18,ENT018,Data warehouse,automation_run,Low,Quality,automation_savings,54304,industrial portfolio margin signal 378
+EVT00379,2026-01-19,ENT019,Sigma workbook,release_review,Medium,Quality,launch_readiness,61673,industrial portfolio margin signal 379
+EVT00380,2026-01-20,ENT020,Sigma workbook,refresh_delay,Medium,Supply chain,qa_defect_rate,21643,industrial portfolio margin signal 380
+EVT00381,2026-01-21,ENT021,CRM,definition_change,Low,Product,gross_margin,57139,industrial portfolio margin signal 381
+EVT00382,2026-01-22,ENT022,CRM,manual_override,High,Analytics,gross_margin,57196,industrial portfolio margin signal 382
+EVT00383,2026-01-23,ENT023,ERP,qa_failure,Critical,Operations,gross_margin,29540,industrial portfolio margin signal 383
+EVT00384,2026-01-24,ENT024,Sigma workbook,refresh_delay,High,Supply chain,qa_defect_rate,17686,industrial portfolio margin signal 384
+EVT00385,2026-01-25,ENT001,CRM,qa_failure,Medium,Supply chain,metric_certification,49527,industrial portfolio margin signal 385
+EVT00386,2026-01-26,ENT002,Support notes,qa_failure,Critical,Supply chain,gross_margin,25067,industrial portfolio margin signal 386
+EVT00387,2026-01-27,ENT003,ERP,refresh_delay,Medium,Operations,metric_certification,47183,industrial portfolio margin signal 387
+EVT00388,2026-01-28,ENT004,Sigma workbook,stakeholder_request,Medium,Quality,backlog_age,222,industrial portfolio margin signal 388
+EVT00389,2026-01-29,ENT005,CRM,stakeholder_request,Medium,Supply chain,launch_readiness,54108,industrial portfolio margin signal 389
+EVT00390,2026-01-30,ENT006,ERP,definition_change,High,Product,backlog_age,18622,industrial portfolio margin signal 390
+EVT00391,2026-01-31,ENT007,CRM,manual_override,Low,Quality,automation_savings,17796,industrial portfolio margin signal 391
+EVT00392,2026-02-01,ENT008,Data warehouse,refresh_delay,Low,Analytics,qa_defect_rate,30556,industrial portfolio margin signal 392
+EVT00393,2026-02-02,ENT009,Sigma workbook,manual_override,Critical,Sales,qa_defect_rate,31734,industrial portfolio margin signal 393
+EVT00394,2026-02-03,ENT010,Data warehouse,release_review,High,Supply chain,automation_savings,45023,industrial portfolio margin signal 394
+EVT00395,2026-02-04,ENT011,CRM,stakeholder_request,Low,Operations,launch_readiness,42896,industrial portfolio margin signal 395
+EVT00396,2026-02-05,ENT012,Data warehouse,refresh_delay,Low,Product,metric_certification,32624,industrial portfolio margin signal 396
+EVT00397,2026-02-06,ENT013,CRM,qa_failure,High,Analytics,launch_readiness,34999,industrial portfolio margin signal 397
+EVT00398,2026-02-07,ENT014,CRM,stakeholder_request,Low,Product,automation_savings,57766,industrial portfolio margin signal 398
+EVT00399,2026-02-08,ENT015,Notebook,definition_change,Medium,Sales,metric_certification,28078,industrial portfolio margin signal 399
+EVT00400,2026-02-09,ENT016,Notebook,stakeholder_request,High,Analytics,qa_defect_rate,50460,industrial portfolio margin signal 400
+EVT00401,2026-02-10,ENT017,ERP,stakeholder_request,Medium,Operations,gross_margin,56085,industrial portfolio margin signal 401
+EVT00402,2026-02-11,ENT018,Notebook,stakeholder_request,Critical,Quality,backlog_age,6918,industrial portfolio margin signal 402
+EVT00403,2026-02-12,ENT019,Sigma workbook,definition_change,Low,Product,qa_defect_rate,51837,industrial portfolio margin signal 403
+EVT00404,2026-02-13,ENT020,Data warehouse,stakeholder_request,High,Quality,backlog_age,60209,industrial portfolio margin signal 404
+EVT00405,2026-02-14,ENT021,ERP,stakeholder_request,Low,Supply chain,backlog_age,17924,industrial portfolio margin signal 405
+EVT00406,2026-02-15,ENT022,CRM,manual_override,Critical,Quality,launch_readiness,1677,industrial portfolio margin signal 406
+EVT00407,2026-02-16,ENT023,Data warehouse,refresh_delay,High,Analytics,launch_readiness,10062,industrial portfolio margin signal 407
+EVT00408,2026-02-17,ENT024,Notebook,release_review,Low,Operations,qa_defect_rate,18427,industrial portfolio margin signal 408
+EVT00409,2026-02-18,ENT001,Sigma workbook,manual_override,Low,Product,gross_margin,32629,industrial portfolio margin signal 409
+EVT00410,2026-02-19,ENT002,CRM,release_review,Low,Sales,launch_readiness,27491,industrial portfolio margin signal 410
+EVT00411,2026-02-20,ENT003,Support notes,stakeholder_request,Medium,Sales,backlog_age,23590,industrial portfolio margin signal 411
+EVT00412,2026-02-21,ENT004,ERP,refresh_delay,Medium,Supply chain,qa_defect_rate,22704,industrial portfolio margin signal 412
+EVT00413,2026-02-22,ENT005,Support notes,refresh_delay,High,Quality,backlog_age,59544,industrial portfolio margin signal 413
+EVT00414,2026-02-23,ENT006,Notebook,manual_override,Critical,Analytics,backlog_age,23409,industrial portfolio margin signal 414
+EVT00415,2026-02-24,ENT007,ERP,qa_failure,Medium,Operations,qa_defect_rate,59462,industrial portfolio margin signal 415
+EVT00416,2026-02-25,ENT008,ERP,qa_failure,Critical,Quality,automation_savings,26850,industrial portfolio margin signal 416
+EVT00417,2026-02-26,ENT009,Support notes,qa_failure,Critical,Quality,launch_readiness,16484,industrial portfolio margin signal 417
+EVT00418,2026-02-27,ENT010,Sigma workbook,qa_failure,Critical,Operations,automation_savings,9777,industrial portfolio margin signal 418
+EVT00419,2026-02-28,ENT011,ERP,qa_failure,Medium,Quality,gross_margin,5361,industrial portfolio margin signal 419
+EVT00420,2026-03-01,ENT012,Notebook,release_review,High,Supply chain,backlog_age,40252,industrial portfolio margin signal 420
+EVT00421,2026-03-02,ENT013,CRM,manual_override,Critical,Operations,qa_defect_rate,34291,industrial portfolio margin signal 421
+EVT00422,2026-03-03,ENT014,Support notes,stakeholder_request,Low,Product,qa_defect_rate,18401,industrial portfolio margin signal 422
+EVT00423,2026-03-04,ENT015,ERP,manual_override,Low,Operations,metric_certification,11325,industrial portfolio margin signal 423
+EVT00424,2026-03-05,ENT016,Sigma workbook,release_review,Medium,Sales,automation_savings,5742,industrial portfolio margin signal 424
+EVT00425,2026-03-06,ENT017,Data warehouse,stakeholder_request,Medium,Sales,launch_readiness,49033,industrial portfolio margin signal 425
+EVT00426,2026-03-07,ENT018,CRM,manual_override,Low,Supply chain,qa_defect_rate,11082,industrial portfolio margin signal 426
+EVT00427,2026-03-08,ENT019,ERP,qa_failure,Low,Sales,gross_margin,45145,industrial portfolio margin signal 427
+EVT00428,2026-03-09,ENT020,Notebook,manual_override,Medium,Quality,automation_savings,37691,industrial portfolio margin signal 428
+EVT00429,2026-03-10,ENT021,ERP,stakeholder_request,Critical,Supply chain,metric_certification,33325,industrial portfolio margin signal 429
+EVT00430,2026-03-11,ENT022,Support notes,refresh_delay,High,Product,qa_defect_rate,34429,industrial portfolio margin signal 430
+EVT00431,2026-03-12,ENT023,ERP,automation_run,Low,Product,qa_defect_rate,24913,industrial portfolio margin signal 431
+EVT00432,2026-03-13,ENT024,Sigma workbook,refresh_delay,Low,Quality,backlog_age,28735,industrial portfolio margin signal 432
+EVT00433,2026-03-14,ENT001,ERP,stakeholder_request,Low,Sales,metric_certification,61083,industrial portfolio margin signal 433
+EVT00434,2026-03-15,ENT002,Sigma workbook,qa_failure,Medium,Sales,automation_savings,53185,industrial portfolio margin signal 434
+EVT00435,2026-03-16,ENT003,Notebook,qa_failure,High,Operations,metric_certification,32909,industrial portfolio margin signal 435
+EVT00436,2026-03-17,ENT004,Sigma workbook,refresh_delay,Low,Product,qa_defect_rate,50554,industrial portfolio margin signal 436
+EVT00437,2026-03-18,ENT005,CRM,release_review,Medium,Operations,automation_savings,19803,industrial portfolio margin signal 437
+EVT00438,2026-03-19,ENT006,Data warehouse,refresh_delay,Medium,Supply chain,automation_savings,19826,industrial portfolio margin signal 438
+EVT00439,2026-03-20,ENT007,Sigma workbook,definition_change,Low,Operations,metric_certification,53049,industrial portfolio margin signal 439
+EVT00440,2026-03-21,ENT008,Sigma workbook,release_review,Low,Supply chain,automation_savings,61307,industrial portfolio margin signal 440
+EVT00441,2026-03-22,ENT009,Notebook,definition_change,Medium,Product,backlog_age,23929,industrial portfolio margin signal 441
+EVT00442,2026-03-23,ENT010,Support notes,automation_run,High,Analytics,launch_readiness,56491,industrial portfolio margin signal 442
+EVT00443,2026-03-24,ENT011,Sigma workbook,stakeholder_request,Medium,Supply chain,metric_certification,37588,industrial portfolio margin signal 443
+EVT00444,2026-03-25,ENT012,Support notes,manual_override,Critical,Sales,qa_defect_rate,35272,industrial portfolio margin signal 444
+EVT00445,2026-03-26,ENT013,CRM,manual_override,High,Quality,gross_margin,41914,industrial portfolio margin signal 445
+EVT00446,2026-03-27,ENT014,Sigma workbook,stakeholder_request,Medium,Supply chain,backlog_age,5542,industrial portfolio margin signal 446
+EVT00447,2026-03-28,ENT015,Data warehouse,refresh_delay,Critical,Quality,metric_certification,55152,industrial portfolio margin signal 447
+EVT00448,2026-03-29,ENT016,Sigma workbook,automation_run,Low,Product,metric_certification,18886,industrial portfolio margin signal 448
+EVT00449,2026-03-30,ENT017,CRM,qa_failure,Critical,Analytics,gross_margin,38446,industrial portfolio margin signal 449
+EVT00450,2026-03-31,ENT018,ERP,qa_failure,High,Quality,automation_savings,22081,industrial portfolio margin signal 450
+EVT00451,2026-04-01,ENT019,ERP,automation_run,Critical,Product,metric_certification,24321,industrial portfolio margin signal 451
+EVT00452,2026-04-02,ENT020,Notebook,refresh_delay,Critical,Quality,gross_margin,51223,industrial portfolio margin signal 452
+EVT00453,2026-04-03,ENT021,Support notes,definition_change,Low,Sales,qa_defect_rate,12096,industrial portfolio margin signal 453
+EVT00454,2026-04-04,ENT022,Sigma workbook,definition_change,Low,Supply chain,automation_savings,39291,industrial portfolio margin signal 454
+EVT00455,2026-04-05,ENT023,Support notes,release_review,Critical,Sales,launch_readiness,24351,industrial portfolio margin signal 455
+EVT00456,2026-04-06,ENT024,Support notes,release_review,Low,Product,backlog_age,10871,industrial portfolio margin signal 456
+EVT00457,2026-04-07,ENT001,Sigma workbook,stakeholder_request,Low,Product,automation_savings,52327,industrial portfolio margin signal 457
+EVT00458,2026-04-08,ENT002,CRM,stakeholder_request,High,Supply chain,backlog_age,27839,industrial portfolio margin signal 458
+EVT00459,2026-04-09,ENT003,Data warehouse,qa_failure,High,Supply chain,automation_savings,5513,industrial portfolio margin signal 459
+EVT00460,2026-04-10,ENT004,ERP,manual_override,Medium,Product,qa_defect_rate,8963,industrial portfolio margin signal 460
+EVT00461,2026-04-11,ENT005,CRM,definition_change,Medium,Sales,metric_certification,44025,industrial portfolio margin signal 461
+EVT00462,2026-04-12,ENT006,ERP,refresh_delay,Low,Sales,automation_savings,57727,industrial portfolio margin signal 462
+EVT00463,2026-04-13,ENT007,Sigma workbook,manual_override,High,Supply chain,backlog_age,14600,industrial portfolio margin signal 463
+EVT00464,2026-04-14,ENT008,Sigma workbook,automation_run,High,Quality,automation_savings,26891,industrial portfolio margin signal 464
+EVT00465,2026-04-15,ENT009,Support notes,release_review,Medium,Quality,gross_margin,11146,industrial portfolio margin signal 465
+EVT00466,2026-04-16,ENT010,Support notes,qa_failure,Critical,Product,backlog_age,38652,industrial portfolio margin signal 466
+EVT00467,2026-04-17,ENT011,Support notes,manual_override,High,Operations,gross_margin,5978,industrial portfolio margin signal 467
+EVT00468,2026-04-18,ENT012,Sigma workbook,release_review,Critical,Sales,launch_readiness,38197,industrial portfolio margin signal 468
+EVT00469,2026-04-19,ENT013,Notebook,stakeholder_request,High,Operations,gross_margin,45903,industrial portfolio margin signal 469
+EVT00470,2026-04-20,ENT014,CRM,definition_change,Low,Analytics,qa_defect_rate,6522,industrial portfolio margin signal 470
+EVT00471,2026-04-21,ENT015,Support notes,qa_failure,Critical,Analytics,backlog_age,43845,industrial portfolio margin signal 471
+EVT00472,2026-04-22,ENT016,Sigma workbook,stakeholder_request,High,Analytics,gross_margin,56874,industrial portfolio margin signal 472
+EVT00473,2026-04-23,ENT017,Data warehouse,refresh_delay,High,Quality,metric_certification,9424,industrial portfolio margin signal 473
+EVT00474,2026-04-24,ENT018,Notebook,automation_run,High,Supply chain,qa_defect_rate,26492,industrial portfolio margin signal 474
+EVT00475,2026-04-25,ENT019,CRM,stakeholder_request,High,Sales,automation_savings,28074,industrial portfolio margin signal 475
+EVT00476,2026-04-26,ENT020,Support notes,release_review,Critical,Operations,backlog_age,50086,industrial portfolio margin signal 476
+EVT00477,2026-04-27,ENT021,Notebook,qa_failure,Critical,Analytics,backlog_age,57447,industrial portfolio margin signal 477
+EVT00478,2026-04-28,ENT022,Notebook,refresh_delay,Critical,Supply chain,automation_savings,22419,industrial portfolio margin signal 478
+EVT00479,2026-04-29,ENT023,Sigma workbook,automation_run,Low,Sales,automation_savings,59157,industrial portfolio margin signal 479
+EVT00480,2026-04-30,ENT024,Notebook,qa_failure,Low,Operations,automation_savings,25204,industrial portfolio margin signal 480
+EVT00481,2026-01-01,ENT001,Notebook,refresh_delay,High,Sales,qa_defect_rate,7864,industrial portfolio margin signal 481
+EVT00482,2026-01-02,ENT002,Sigma workbook,qa_failure,High,Operations,backlog_age,28510,industrial portfolio margin signal 482
+EVT00483,2026-01-03,ENT003,Notebook,manual_override,Critical,Analytics,gross_margin,16848,industrial portfolio margin signal 483
+EVT00484,2026-01-04,ENT004,Support notes,automation_run,Critical,Analytics,launch_readiness,43243,industrial portfolio margin signal 484
+EVT00485,2026-01-05,ENT005,Support notes,automation_run,Medium,Product,gross_margin,29102,industrial portfolio margin signal 485
+EVT00486,2026-01-06,ENT006,CRM,definition_change,High,Quality,gross_margin,57505,industrial portfolio margin signal 486
+EVT00487,2026-01-07,ENT007,Data warehouse,manual_override,Low,Operations,backlog_age,25826,industrial portfolio margin signal 487
+EVT00488,2026-01-08,ENT008,CRM,release_review,Medium,Analytics,automation_savings,34747,industrial portfolio margin signal 488
+EVT00489,2026-01-09,ENT009,CRM,qa_failure,Medium,Quality,launch_readiness,46396,industrial portfolio margin signal 489
+EVT00490,2026-01-10,ENT010,ERP,manual_override,Low,Quality,metric_certification,19217,industrial portfolio margin signal 490
+EVT00491,2026-01-11,ENT011,ERP,automation_run,Critical,Operations,automation_savings,11092,industrial portfolio margin signal 491
+EVT00492,2026-01-12,ENT012,CRM,release_review,Critical,Sales,backlog_age,37889,industrial portfolio margin signal 492
+EVT00493,2026-01-13,ENT013,Data warehouse,qa_failure,Low,Operations,automation_savings,35083,industrial portfolio margin signal 493
+EVT00494,2026-01-14,ENT014,Data warehouse,refresh_delay,Medium,Product,backlog_age,61267,industrial portfolio margin signal 494
+EVT00495,2026-01-15,ENT015,Sigma workbook,manual_override,High,Operations,metric_certification,16446,industrial portfolio margin signal 495
+EVT00496,2026-01-16,ENT016,ERP,refresh_delay,High,Supply chain,metric_certification,53098,industrial portfolio margin signal 496
+EVT00497,2026-01-17,ENT017,Support notes,manual_override,Critical,Analytics,qa_defect_rate,23386,industrial portfolio margin signal 497
+EVT00498,2026-01-18,ENT018,CRM,automation_run,Medium,Analytics,qa_defect_rate,30561,industrial portfolio margin signal 498
+EVT00499,2026-01-19,ENT019,CRM,automation_run,Medium,Sales,backlog_age,46515,industrial portfolio margin signal 499
+EVT00500,2026-01-20,ENT020,Sigma workbook,definition_change,Medium,Quality,gross_margin,10005,industrial portfolio margin signal 500
+EVT00501,2026-01-21,ENT021,Sigma workbook,manual_override,Low,Analytics,automation_savings,52589,industrial portfolio margin signal 501
+EVT00502,2026-01-22,ENT022,ERP,refresh_delay,Medium,Product,automation_savings,38688,industrial portfolio margin signal 502
+EVT00503,2026-01-23,ENT023,Data warehouse,automation_run,High,Sales,gross_margin,52111,industrial portfolio margin signal 503
+EVT00504,2026-01-24,ENT024,Support notes,definition_change,Medium,Supply chain,backlog_age,32664,industrial portfolio margin signal 504
+EVT00505,2026-01-25,ENT001,Notebook,stakeholder_request,High,Operations,qa_defect_rate,32629,industrial portfolio margin signal 505
+EVT00506,2026-01-26,ENT002,Data warehouse,definition_change,Medium,Sales,qa_defect_rate,24102,industrial portfolio margin signal 506
+EVT00507,2026-01-27,ENT003,CRM,release_review,Critical,Analytics,gross_margin,58900,industrial portfolio margin signal 507
+EVT00508,2026-01-28,ENT004,Notebook,qa_failure,High,Product,launch_readiness,11404,industrial portfolio margin signal 508
+EVT00509,2026-01-29,ENT005,ERP,release_review,Low,Product,backlog_age,50887,industrial portfolio margin signal 509
+EVT00510,2026-01-30,ENT006,Notebook,release_review,Critical,Analytics,metric_certification,46380,industrial portfolio margin signal 510
+EVT00511,2026-01-31,ENT007,CRM,qa_failure,High,Sales,metric_certification,5569,industrial portfolio margin signal 511
+EVT00512,2026-02-01,ENT008,ERP,stakeholder_request,High,Quality,qa_defect_rate,30735,industrial portfolio margin signal 512
+EVT00513,2026-02-02,ENT009,Data warehouse,stakeholder_request,Critical,Operations,gross_margin,18609,industrial portfolio margin signal 513
+EVT00514,2026-02-03,ENT010,CRM,stakeholder_request,Medium,Operations,launch_readiness,11088,industrial portfolio margin signal 514
+EVT00515,2026-02-04,ENT011,Notebook,qa_failure,Medium,Product,gross_margin,35174,industrial portfolio margin signal 515
+EVT00516,2026-02-05,ENT012,Sigma workbook,automation_run,Low,Operations,gross_margin,41911,industrial portfolio margin signal 516
+EVT00517,2026-02-06,ENT013,Support notes,definition_change,High,Quality,automation_savings,18431,industrial portfolio margin signal 517
+EVT00518,2026-02-07,ENT014,CRM,manual_override,Critical,Operations,gross_margin,2778,industrial portfolio margin signal 518
+EVT00519,2026-02-08,ENT015,CRM,qa_failure,Low,Operations,metric_certification,195,industrial portfolio margin signal 519
+EVT00520,2026-02-09,ENT016,Notebook,refresh_delay,Critical,Analytics,qa_defect_rate,19690,industrial portfolio margin signal 520
+EVT00521,2026-02-10,ENT017,Support notes,qa_failure,Medium,Analytics,metric_certification,51515,industrial portfolio margin signal 521
+EVT00522,2026-02-11,ENT018,ERP,refresh_delay,Critical,Sales,qa_defect_rate,48584,industrial portfolio margin signal 522
+EVT00523,2026-02-12,ENT019,Sigma workbook,refresh_delay,Critical,Supply chain,metric_certification,40519,industrial portfolio margin signal 523
+EVT00524,2026-02-13,ENT020,Support notes,manual_override,Critical,Analytics,launch_readiness,45489,industrial portfolio margin signal 524
+EVT00525,2026-02-14,ENT021,Data warehouse,automation_run,Critical,Quality,qa_defect_rate,51952,industrial portfolio margin signal 525
+EVT00526,2026-02-15,ENT022,CRM,manual_override,Low,Product,backlog_age,56126,industrial portfolio margin signal 526
+EVT00527,2026-02-16,ENT023,CRM,refresh_delay,Medium,Quality,gross_margin,3276,industrial portfolio margin signal 527
+EVT00528,2026-02-17,ENT024,Support notes,refresh_delay,Critical,Quality,automation_savings,7071,industrial portfolio margin signal 528
+EVT00529,2026-02-18,ENT001,Data warehouse,definition_change,Medium,Operations,gross_margin,44483,industrial portfolio margin signal 529
+EVT00530,2026-02-19,ENT002,CRM,automation_run,Medium,Product,gross_margin,49670,industrial portfolio margin signal 530
+EVT00531,2026-02-20,ENT003,ERP,stakeholder_request,Medium,Operations,metric_certification,59561,industrial portfolio margin signal 531
+EVT00532,2026-02-21,ENT004,ERP,stakeholder_request,Low,Sales,launch_readiness,30314,industrial portfolio margin signal 532
+EVT00533,2026-02-22,ENT005,Sigma workbook,definition_change,High,Quality,metric_certification,11716,industrial portfolio margin signal 533
+EVT00534,2026-02-23,ENT006,Data warehouse,refresh_delay,Critical,Quality,automation_savings,22818,industrial portfolio margin signal 534
+EVT00535,2026-02-24,ENT007,Notebook,release_review,Critical,Operations,metric_certification,39050,industrial portfolio margin signal 535
+EVT00536,2026-02-25,ENT008,ERP,manual_override,Critical,Quality,gross_margin,31708,industrial portfolio margin signal 536
+EVT00537,2026-02-26,ENT009,Data warehouse,automation_run,High,Quality,launch_readiness,28604,industrial portfolio margin signal 537
+EVT00538,2026-02-27,ENT010,Sigma workbook,qa_failure,Low,Supply chain,qa_defect_rate,27472,industrial portfolio margin signal 538
+EVT00539,2026-02-28,ENT011,Support notes,manual_override,Medium,Quality,gross_margin,23485,industrial portfolio margin signal 539
+EVT00540,2026-03-01,ENT012,Notebook,qa_failure,Critical,Analytics,metric_certification,2931,industrial portfolio margin signal 540
+EVT00541,2026-03-02,ENT013,Data warehouse,refresh_delay,Critical,Operations,automation_savings,44445,industrial portfolio margin signal 541
+EVT00542,2026-03-03,ENT014,Support notes,automation_run,Medium,Sales,backlog_age,3285,industrial portfolio margin signal 542
+EVT00543,2026-03-04,ENT015,Data warehouse,release_review,Low,Product,automation_savings,29897,industrial portfolio margin signal 543
+EVT00544,2026-03-05,ENT016,Sigma workbook,release_review,Medium,Product,gross_margin,35902,industrial portfolio margin signal 544
+EVT00545,2026-03-06,ENT017,Support notes,stakeholder_request,High,Operations,automation_savings,56094,industrial portfolio margin signal 545
+EVT00546,2026-03-07,ENT018,Sigma workbook,definition_change,Medium,Analytics,backlog_age,29310,industrial portfolio margin signal 546
+EVT00547,2026-03-08,ENT019,ERP,qa_failure,Low,Sales,metric_certification,23074,industrial portfolio margin signal 547
+EVT00548,2026-03-09,ENT020,Sigma workbook,manual_override,Medium,Product,backlog_age,26349,industrial portfolio margin signal 548
+EVT00549,2026-03-10,ENT021,Data warehouse,automation_run,Critical,Analytics,automation_savings,52650,industrial portfolio margin signal 549
+EVT00550,2026-03-11,ENT022,Sigma workbook,stakeholder_request,Medium,Supply chain,launch_readiness,6262,industrial portfolio margin signal 550
+EVT00551,2026-03-12,ENT023,Sigma workbook,definition_change,Low,Analytics,gross_margin,9374,industrial portfolio margin signal 551
+EVT00552,2026-03-13,ENT024,ERP,automation_run,Low,Product,gross_margin,47468,industrial portfolio margin signal 552
+EVT00553,2026-03-14,ENT001,ERP,definition_change,High,Analytics,launch_readiness,41479,industrial portfolio margin signal 553
+EVT00554,2026-03-15,ENT002,Sigma workbook,stakeholder_request,Medium,Sales,launch_readiness,8875,industrial portfolio margin signal 554
+EVT00555,2026-03-16,ENT003,CRM,automation_run,Critical,Analytics,automation_savings,25947,industrial portfolio margin signal 555
+EVT00556,2026-03-17,ENT004,Notebook,automation_run,Critical,Operations,qa_defect_rate,30247,industrial portfolio margin signal 556
+EVT00557,2026-03-18,ENT005,Sigma workbook,automation_run,High,Supply chain,backlog_age,31626,industrial portfolio margin signal 557
+EVT00558,2026-03-19,ENT006,Sigma workbook,manual_override,Medium,Supply chain,backlog_age,6897,industrial portfolio margin signal 558
+EVT00559,2026-03-20,ENT007,CRM,qa_failure,Medium,Analytics,qa_defect_rate,25384,industrial portfolio margin signal 559
+EVT00560,2026-03-21,ENT008,Data warehouse,manual_override,Low,Supply chain,gross_margin,51917,industrial portfolio margin signal 560
+EVT00561,2026-03-22,ENT009,CRM,automation_run,Low,Analytics,backlog_age,36609,industrial portfolio margin signal 561
+EVT00562,2026-03-23,ENT010,Data warehouse,definition_change,Low,Analytics,metric_certification,8283,industrial portfolio margin signal 562
+EVT00563,2026-03-24,ENT011,Data warehouse,manual_override,Medium,Operations,gross_margin,27625,industrial portfolio margin signal 563
+EVT00564,2026-03-25,ENT012,CRM,stakeholder_request,Low,Sales,gross_margin,55002,industrial portfolio margin signal 564
+EVT00565,2026-03-26,ENT013,Support notes,release_review,Low,Supply chain,qa_defect_rate,34586,industrial portfolio margin signal 565
+EVT00566,2026-03-27,ENT014,CRM,qa_failure,Low,Analytics,automation_savings,4848,industrial portfolio margin signal 566
+EVT00567,2026-03-28,ENT015,Support notes,refresh_delay,Medium,Operations,qa_defect_rate,43339,industrial portfolio margin signal 567
+EVT00568,2026-03-29,ENT016,Data warehouse,automation_run,Low,Product,qa_defect_rate,50559,industrial portfolio margin signal 568
+EVT00569,2026-03-30,ENT017,Support notes,stakeholder_request,Medium,Operations,metric_certification,9878,industrial portfolio margin signal 569
+EVT00570,2026-03-31,ENT018,Data warehouse,automation_run,Medium,Sales,qa_defect_rate,30248,industrial portfolio margin signal 570
+EVT00571,2026-04-01,ENT019,Support notes,qa_failure,Critical,Analytics,launch_readiness,16668,industrial portfolio margin signal 571
+EVT00572,2026-04-02,ENT020,CRM,qa_failure,High,Analytics,qa_defect_rate,61886,industrial portfolio margin signal 572
+EVT00573,2026-04-03,ENT021,Support notes,release_review,Medium,Supply chain,qa_defect_rate,13852,industrial portfolio margin signal 573
+EVT00574,2026-04-04,ENT022,Notebook,release_review,Medium,Sales,gross_margin,20412,industrial portfolio margin signal 574
+EVT00575,2026-04-05,ENT023,CRM,qa_failure,Low,Analytics,qa_defect_rate,35245,industrial portfolio margin signal 575
+EVT00576,2026-04-06,ENT024,Data warehouse,automation_run,Critical,Operations,qa_defect_rate,56622,industrial portfolio margin signal 576
+EVT00577,2026-04-07,ENT001,CRM,qa_failure,High,Quality,qa_defect_rate,59253,industrial portfolio margin signal 577
+EVT00578,2026-04-08,ENT002,ERP,qa_failure,Low,Product,metric_certification,34212,industrial portfolio margin signal 578
+EVT00579,2026-04-09,ENT003,ERP,automation_run,Low,Analytics,gross_margin,1791,industrial portfolio margin signal 579
+EVT00580,2026-04-10,ENT004,Notebook,stakeholder_request,High,Operations,metric_certification,53143,industrial portfolio margin signal 580
+EVT00581,2026-04-11,ENT005,Data warehouse,qa_failure,Critical,Quality,gross_margin,33895,industrial portfolio margin signal 581
+EVT00582,2026-04-12,ENT006,ERP,automation_run,High,Analytics,automation_savings,28677,industrial portfolio margin signal 582
+EVT00583,2026-04-13,ENT007,Data warehouse,refresh_delay,High,Product,launch_readiness,6820,industrial portfolio margin signal 583
+EVT00584,2026-04-14,ENT008,Support notes,qa_failure,Low,Quality,automation_savings,29414,industrial portfolio margin signal 584
+EVT00585,2026-04-15,ENT009,Notebook,manual_override,Low,Quality,backlog_age,5573,industrial portfolio margin signal 585
+EVT00586,2026-04-16,ENT010,Support notes,stakeholder_request,Medium,Analytics,qa_defect_rate,56420,industrial portfolio margin signal 586
+EVT00587,2026-04-17,ENT011,ERP,release_review,Low,Operations,automation_savings,38975,industrial portfolio margin signal 587
+EVT00588,2026-04-18,ENT012,CRM,refresh_delay,Critical,Sales,metric_certification,6147,industrial portfolio margin signal 588
+EVT00589,2026-04-19,ENT013,CRM,automation_run,Low,Sales,automation_savings,50547,industrial portfolio margin signal 589
+EVT00590,2026-04-20,ENT014,ERP,stakeholder_request,Medium,Operations,gross_margin,17618,industrial portfolio margin signal 590
+EVT00591,2026-04-21,ENT015,CRM,definition_change,Low,Operations,backlog_age,24609,industrial portfolio margin signal 591
+EVT00592,2026-04-22,ENT016,Sigma workbook,manual_override,Medium,Quality,launch_readiness,56365,industrial portfolio margin signal 592
+EVT00593,2026-04-23,ENT017,CRM,definition_change,Medium,Product,gross_margin,39408,industrial portfolio margin signal 593
+EVT00594,2026-04-24,ENT018,Sigma workbook,qa_failure,Critical,Quality,gross_margin,20120,industrial portfolio margin signal 594
+EVT00595,2026-04-25,ENT019,CRM,stakeholder_request,Critical,Analytics,backlog_age,10685,industrial portfolio margin signal 595
+EVT00596,2026-04-26,ENT020,Notebook,definition_change,Critical,Analytics,launch_readiness,55443,industrial portfolio margin signal 596
+EVT00597,2026-04-27,ENT021,CRM,qa_failure,Critical,Analytics,launch_readiness,93,industrial portfolio margin signal 597
+EVT00598,2026-04-28,ENT022,Sigma workbook,stakeholder_request,Critical,Analytics,automation_savings,46208,industrial portfolio margin signal 598
+EVT00599,2026-04-29,ENT023,Sigma workbook,refresh_delay,High,Sales,qa_defect_rate,57168,industrial portfolio margin signal 599
+EVT00600,2026-04-30,ENT024,ERP,stakeholder_request,High,Analytics,gross_margin,39283,industrial portfolio margin signal 600
+EVT00601,2026-01-01,ENT001,Data warehouse,qa_failure,High,Sales,metric_certification,4471,industrial portfolio margin signal 601
+EVT00602,2026-01-02,ENT002,Sigma workbook,manual_override,Low,Product,automation_savings,41568,industrial portfolio margin signal 602
+EVT00603,2026-01-03,ENT003,ERP,qa_failure,Medium,Sales,gross_margin,24832,industrial portfolio margin signal 603
+EVT00604,2026-01-04,ENT004,Support notes,definition_change,Medium,Operations,launch_readiness,55060,industrial portfolio margin signal 604
+EVT00605,2026-01-05,ENT005,Data warehouse,release_review,Critical,Operations,automation_savings,12307,industrial portfolio margin signal 605
+EVT00606,2026-01-06,ENT006,Support notes,refresh_delay,Medium,Operations,metric_certification,54611,industrial portfolio margin signal 606
+EVT00607,2026-01-07,ENT007,CRM,release_review,High,Operations,backlog_age,2185,industrial portfolio margin signal 607
+EVT00608,2026-01-08,ENT008,ERP,release_review,High,Supply chain,metric_certification,358,industrial portfolio margin signal 608
+EVT00609,2026-01-09,ENT009,CRM,stakeholder_request,High,Product,automation_savings,44487,industrial portfolio margin signal 609
+EVT00610,2026-01-10,ENT010,Notebook,definition_change,High,Operations,qa_defect_rate,54301,industrial portfolio margin signal 610
+EVT00611,2026-01-11,ENT011,ERP,stakeholder_request,Low,Analytics,backlog_age,8061,industrial portfolio margin signal 611
+EVT00612,2026-01-12,ENT012,CRM,refresh_delay,Medium,Quality,gross_margin,8453,industrial portfolio margin signal 612
+EVT00613,2026-01-13,ENT013,Sigma workbook,definition_change,Medium,Supply chain,launch_readiness,3743,industrial portfolio margin signal 613
+EVT00614,2026-01-14,ENT014,ERP,definition_change,Low,Analytics,launch_readiness,46238,industrial portfolio margin signal 614
+EVT00615,2026-01-15,ENT015,Data warehouse,manual_override,Low,Analytics,backlog_age,23461,industrial portfolio margin signal 615
+EVT00616,2026-01-16,ENT016,ERP,refresh_delay,Low,Product,launch_readiness,16307,industrial portfolio margin signal 616
+EVT00617,2026-01-17,ENT017,Support notes,refresh_delay,Critical,Supply chain,automation_savings,10556,industrial portfolio margin signal 617
+EVT00618,2026-01-18,ENT018,CRM,definition_change,Critical,Quality,gross_margin,53167,industrial portfolio margin signal 618
+EVT00619,2026-01-19,ENT019,Notebook,release_review,Low,Operations,automation_savings,42744,industrial portfolio margin signal 619
+EVT00620,2026-01-20,ENT020,Support notes,release_review,Low,Quality,qa_defect_rate,2660,industrial portfolio margin signal 620
+EVT00621,2026-01-21,ENT021,CRM,release_review,Low,Sales,metric_certification,14723,industrial portfolio margin signal 621
+EVT00622,2026-01-22,ENT022,Data warehouse,refresh_delay,High,Quality,backlog_age,21897,industrial portfolio margin signal 622
+EVT00623,2026-01-23,ENT023,Notebook,manual_override,High,Sales,metric_certification,20256,industrial portfolio margin signal 623
+EVT00624,2026-01-24,ENT024,Support notes,release_review,High,Product,metric_certification,28583,industrial portfolio margin signal 624
+EVT00625,2026-01-25,ENT001,Notebook,refresh_delay,Low,Analytics,metric_certification,46039,industrial portfolio margin signal 625
+EVT00626,2026-01-26,ENT002,Sigma workbook,manual_override,Low,Analytics,metric_certification,28473,industrial portfolio margin signal 626
+EVT00627,2026-01-27,ENT003,Notebook,definition_change,High,Supply chain,metric_certification,22237,industrial portfolio margin signal 627
+EVT00628,2026-01-28,ENT004,ERP,stakeholder_request,Low,Sales,gross_margin,18503,industrial portfolio margin signal 628
+EVT00629,2026-01-29,ENT005,CRM,release_review,Critical,Operations,qa_defect_rate,50526,industrial portfolio margin signal 629
+EVT00630,2026-01-30,ENT006,Sigma workbook,automation_run,Medium,Analytics,automation_savings,37897,industrial portfolio margin signal 630
+EVT00631,2026-01-31,ENT007,CRM,automation_run,Low,Analytics,qa_defect_rate,26250,industrial portfolio margin signal 631
+EVT00632,2026-02-01,ENT008,ERP,automation_run,High,Product,metric_certification,25419,industrial portfolio margin signal 632
+EVT00633,2026-02-02,ENT009,CRM,refresh_delay,Critical,Analytics,qa_defect_rate,55899,industrial portfolio margin signal 633
+EVT00634,2026-02-03,ENT010,Data warehouse,refresh_delay,Medium,Sales,metric_certification,24090,industrial portfolio margin signal 634
+EVT00635,2026-02-04,ENT011,ERP,manual_override,Low,Supply chain,launch_readiness,49852,industrial portfolio margin signal 635
+EVT00636,2026-02-05,ENT012,Notebook,manual_override,Medium,Product,qa_defect_rate,50662,industrial portfolio margin signal 636
+EVT00637,2026-02-06,ENT013,Data warehouse,manual_override,High,Sales,qa_defect_rate,46529,industrial portfolio margin signal 637
+EVT00638,2026-02-07,ENT014,ERP,manual_override,Low,Sales,qa_defect_rate,16246,industrial portfolio margin signal 638
+EVT00639,2026-02-08,ENT015,ERP,qa_failure,High,Analytics,gross_margin,50733,industrial portfolio margin signal 639
+EVT00640,2026-02-09,ENT016,ERP,qa_failure,Critical,Sales,gross_margin,37963,industrial portfolio margin signal 640
+EVT00641,2026-02-10,ENT017,Data warehouse,refresh_delay,Low,Analytics,automation_savings,43692,industrial portfolio margin signal 641
+EVT00642,2026-02-11,ENT018,Support notes,refresh_delay,Low,Analytics,qa_defect_rate,9626,industrial portfolio margin signal 642
+EVT00643,2026-02-12,ENT019,Notebook,release_review,Medium,Sales,metric_certification,32142,industrial portfolio margin signal 643
+EVT00644,2026-02-13,ENT020,Sigma workbook,qa_failure,Critical,Sales,automation_savings,41828,industrial portfolio margin signal 644
+EVT00645,2026-02-14,ENT021,ERP,release_review,High,Supply chain,automation_savings,19268,industrial portfolio margin signal 645
+EVT00646,2026-02-15,ENT022,Notebook,qa_failure,Medium,Operations,automation_savings,50653,industrial portfolio margin signal 646
+EVT00647,2026-02-16,ENT023,Data warehouse,qa_failure,Medium,Sales,automation_savings,43741,industrial portfolio margin signal 647
+EVT00648,2026-02-17,ENT024,ERP,manual_override,Medium,Supply chain,gross_margin,12445,industrial portfolio margin signal 648
+EVT00649,2026-02-18,ENT001,CRM,qa_failure,Critical,Supply chain,automation_savings,14727,industrial portfolio margin signal 649
+EVT00650,2026-02-19,ENT002,Data warehouse,stakeholder_request,Low,Operations,backlog_age,508,industrial portfolio margin signal 650
+EVT00651,2026-02-20,ENT003,ERP,automation_run,High,Operations,automation_savings,15889,industrial portfolio margin signal 651
+EVT00652,2026-02-21,ENT004,Support notes,stakeholder_request,Low,Sales,gross_margin,2782,industrial portfolio margin signal 652
+EVT00653,2026-02-22,ENT005,CRM,refresh_delay,Low,Quality,metric_certification,31581,industrial portfolio margin signal 653
+EVT00654,2026-02-23,ENT006,Notebook,manual_override,Critical,Product,launch_readiness,30809,industrial portfolio margin signal 654
+EVT00655,2026-02-24,ENT007,Data warehouse,refresh_delay,High,Analytics,gross_margin,47126,industrial portfolio margin signal 655
+EVT00656,2026-02-25,ENT008,Sigma workbook,definition_change,Critical,Supply chain,launch_readiness,54211,industrial portfolio margin signal 656
+EVT00657,2026-02-26,ENT009,ERP,release_review,High,Supply chain,backlog_age,3183,industrial portfolio margin signal 657
+EVT00658,2026-02-27,ENT010,ERP,refresh_delay,High,Sales,launch_readiness,54100,industrial portfolio margin signal 658
+EVT00659,2026-02-28,ENT011,CRM,release_review,Medium,Product,qa_defect_rate,29296,industrial portfolio margin signal 659
+EVT00660,2026-03-01,ENT012,Support notes,manual_override,Medium,Sales,backlog_age,8518,industrial portfolio margin signal 660
+EVT00661,2026-03-02,ENT013,Support notes,release_review,Low,Quality,gross_margin,33792,industrial portfolio margin signal 661
+EVT00662,2026-03-03,ENT014,CRM,stakeholder_request,Low,Supply chain,metric_certification,10358,industrial portfolio margin signal 662
+EVT00663,2026-03-04,ENT015,Notebook,automation_run,Medium,Quality,metric_certification,35739,industrial portfolio margin signal 663
+EVT00664,2026-03-05,ENT016,Sigma workbook,refresh_delay,Critical,Analytics,backlog_age,51999,industrial portfolio margin signal 664
+EVT00665,2026-03-06,ENT017,Support notes,definition_change,Medium,Supply chain,gross_margin,37248,industrial portfolio margin signal 665
+EVT00666,2026-03-07,ENT018,Support notes,manual_override,Critical,Analytics,launch_readiness,17940,industrial portfolio margin signal 666
+EVT00667,2026-03-08,ENT019,Data warehouse,definition_change,Medium,Sales,metric_certification,47124,industrial portfolio margin signal 667
+EVT00668,2026-03-09,ENT020,Sigma workbook,manual_override,Medium,Analytics,gross_margin,8444,industrial portfolio margin signal 668
+EVT00669,2026-03-10,ENT021,CRM,automation_run,Medium,Supply chain,automation_savings,14778,industrial portfolio margin signal 669
+EVT00670,2026-03-11,ENT022,Sigma workbook,manual_override,Low,Analytics,gross_margin,17102,industrial portfolio margin signal 670
+EVT00671,2026-03-12,ENT023,Notebook,stakeholder_request,Medium,Operations,launch_readiness,6524,industrial portfolio margin signal 671
+EVT00672,2026-03-13,ENT024,Data warehouse,stakeholder_request,High,Product,metric_certification,45911,industrial portfolio margin signal 672
+EVT00673,2026-03-14,ENT001,Data warehouse,qa_failure,Medium,Quality,gross_margin,42281,industrial portfolio margin signal 673
+EVT00674,2026-03-15,ENT002,Support notes,stakeholder_request,Critical,Quality,metric_certification,21657,industrial portfolio margin signal 674
+EVT00675,2026-03-16,ENT003,CRM,refresh_delay,High,Quality,gross_margin,17807,industrial portfolio margin signal 675
+EVT00676,2026-03-17,ENT004,Sigma workbook,qa_failure,High,Quality,backlog_age,8439,industrial portfolio margin signal 676
+EVT00677,2026-03-18,ENT005,Notebook,refresh_delay,Critical,Supply chain,qa_defect_rate,29087,industrial portfolio margin signal 677
+EVT00678,2026-03-19,ENT006,ERP,stakeholder_request,Medium,Operations,gross_margin,49126,industrial portfolio margin signal 678
+EVT00679,2026-03-20,ENT007,CRM,definition_change,Low,Quality,automation_savings,5626,industrial portfolio margin signal 679
+EVT00680,2026-03-21,ENT008,CRM,release_review,High,Quality,gross_margin,37617,industrial portfolio margin signal 680
+EVT00681,2026-03-22,ENT009,ERP,refresh_delay,Medium,Supply chain,launch_readiness,53854,industrial portfolio margin signal 681
+EVT00682,2026-03-23,ENT010,Notebook,definition_change,High,Operations,gross_margin,39278,industrial portfolio margin signal 682
+EVT00683,2026-03-24,ENT011,Support notes,qa_failure,Low,Analytics,backlog_age,14516,industrial portfolio margin signal 683
+EVT00684,2026-03-25,ENT012,Data warehouse,manual_override,Low,Analytics,qa_defect_rate,4999,industrial portfolio margin signal 684
+EVT00685,2026-03-26,ENT013,Sigma workbook,refresh_delay,Critical,Operations,launch_readiness,38117,industrial portfolio margin signal 685
+EVT00686,2026-03-27,ENT014,Data warehouse,definition_change,Low,Operations,gross_margin,8949,industrial portfolio margin signal 686
+EVT00687,2026-03-28,ENT015,Data warehouse,release_review,Low,Operations,qa_defect_rate,31564,industrial portfolio margin signal 687
+EVT00688,2026-03-29,ENT016,CRM,automation_run,High,Analytics,automation_savings,48458,industrial portfolio margin signal 688
+EVT00689,2026-03-30,ENT017,ERP,refresh_delay,High,Analytics,metric_certification,58939,industrial portfolio margin signal 689
+EVT00690,2026-03-31,ENT018,Data warehouse,release_review,Critical,Supply chain,launch_readiness,9306,industrial portfolio margin signal 690
+EVT00691,2026-04-01,ENT019,CRM,definition_change,Medium,Quality,backlog_age,14372,industrial portfolio margin signal 691
+EVT00692,2026-04-02,ENT020,Support notes,definition_change,Critical,Sales,gross_margin,43341,industrial portfolio margin signal 692
+EVT00693,2026-04-03,ENT021,Data warehouse,qa_failure,High,Sales,metric_certification,61190,industrial portfolio margin signal 693
+EVT00694,2026-04-04,ENT022,ERP,stakeholder_request,Low,Operations,metric_certification,9528,industrial portfolio margin signal 694
+EVT00695,2026-04-05,ENT023,CRM,stakeholder_request,Low,Product,backlog_age,360,industrial portfolio margin signal 695
+EVT00696,2026-04-06,ENT024,Data warehouse,refresh_delay,Low,Supply chain,metric_certification,53598,industrial portfolio margin signal 696
+EVT00697,2026-04-07,ENT001,ERP,manual_override,Low,Quality,backlog_age,23020,industrial portfolio margin signal 697
+EVT00698,2026-04-08,ENT002,ERP,manual_override,High,Quality,launch_readiness,16764,industrial portfolio margin signal 698
+EVT00699,2026-04-09,ENT003,Notebook,definition_change,Medium,Product,launch_readiness,49512,industrial portfolio margin signal 699
+EVT00700,2026-04-10,ENT004,Support notes,release_review,High,Quality,gross_margin,27603,industrial portfolio margin signal 700
+EVT00701,2026-04-11,ENT005,ERP,stakeholder_request,Medium,Operations,backlog_age,16736,industrial portfolio margin signal 701
+EVT00702,2026-04-12,ENT006,Support notes,release_review,Low,Supply chain,automation_savings,60509,industrial portfolio margin signal 702
+EVT00703,2026-04-13,ENT007,CRM,stakeholder_request,Low,Analytics,qa_defect_rate,20561,industrial portfolio margin signal 703
+EVT00704,2026-04-14,ENT008,Data warehouse,refresh_delay,Critical,Supply chain,launch_readiness,40120,industrial portfolio margin signal 704
+EVT00705,2026-04-15,ENT009,Support notes,definition_change,Medium,Supply chain,qa_defect_rate,41163,industrial portfolio margin signal 705
+EVT00706,2026-04-16,ENT010,CRM,automation_run,High,Product,automation_savings,41430,industrial portfolio margin signal 706
+EVT00707,2026-04-17,ENT011,Notebook,manual_override,High,Operations,gross_margin,48275,industrial portfolio margin signal 707
+EVT00708,2026-04-18,ENT012,ERP,release_review,Critical,Quality,qa_defect_rate,26849,industrial portfolio margin signal 708
+EVT00709,2026-04-19,ENT013,ERP,qa_failure,Medium,Quality,qa_defect_rate,59283,industrial portfolio margin signal 709
+EVT00710,2026-04-20,ENT014,Support notes,definition_change,Medium,Quality,gross_margin,2376,industrial portfolio margin signal 710
+EVT00711,2026-04-21,ENT015,CRM,refresh_delay,High,Analytics,qa_defect_rate,48499,industrial portfolio margin signal 711
+EVT00712,2026-04-22,ENT016,CRM,release_review,Critical,Quality,qa_defect_rate,3159,industrial portfolio margin signal 712
+EVT00713,2026-04-23,ENT017,Sigma workbook,manual_override,Critical,Operations,metric_certification,55251,industrial portfolio margin signal 713
+EVT00714,2026-04-24,ENT018,ERP,qa_failure,Medium,Analytics,metric_certification,15934,industrial portfolio margin signal 714
+EVT00715,2026-04-25,ENT019,Support notes,stakeholder_request,High,Product,automation_savings,48247,industrial portfolio margin signal 715
+EVT00716,2026-04-26,ENT020,ERP,qa_failure,Critical,Sales,automation_savings,23291,industrial portfolio margin signal 716
+EVT00717,2026-04-27,ENT021,Notebook,refresh_delay,High,Analytics,automation_savings,48796,industrial portfolio margin signal 717
+EVT00718,2026-04-28,ENT022,Notebook,definition_change,Critical,Quality,launch_readiness,60354,industrial portfolio margin signal 718
+EVT00719,2026-04-29,ENT023,ERP,refresh_delay,Low,Analytics,metric_certification,39357,industrial portfolio margin signal 719
+EVT00720,2026-04-30,ENT024,Data warehouse,definition_change,Medium,Sales,automation_savings,4001,industrial portfolio margin signal 720
