@@ -1,4 +1,4 @@
-window.portfolioArtifact = {
+{
   "generatedFrom": "scripts/generate_portfolio_artifact.py",
   "cards": [
     {
@@ -843,4 +843,4 @@ window.portfolioArtifact = {
     "Early NPD gate evidence and sales enablement handoff",
     "ERP, CRM, supplier, quality, and training data confidence"
   ]
-};
+}

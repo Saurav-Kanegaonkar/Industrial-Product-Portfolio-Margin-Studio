@@ -1,0 +1,15 @@
+action_id,family_id,family_name,region_scope,action_type,rationale,annual_margin_lift_k,revenue_at_risk_k,confidence,cross_functional_owner,next_gate,time_to_value_months
+CASE001,PF010,Discrete Valve Monitor,APAC,Migration and retirement,"transition lifecycle, 19.6% margin, 98 day lead time",777.7,766.2,Needs validation,Sales,Substitution map and last-time-buy plan,3
+CASE002,PF010,Discrete Valve Monitor,North America,Migration and retirement,"transition lifecycle, 16.0% margin, 121 day lead time",638.7,535.9,Medium,Operations,Substitution map and last-time-buy plan,4
+CASE003,PF005,Hazardous Location Switches,North America,Targeted price reset,"transition lifecycle, 20.8% margin, 89 day lead time",494.4,186.4,Medium,Supply chain,Distributor impact review,5
+CASE004,PF010,Discrete Valve Monitor,Latin America,Targeted price reset,"transition lifecycle, 20.9% margin, 98 day lead time",491.7,204.3,Medium,Engineering,Distributor impact review,6
+CASE005,PF005,Hazardous Location Switches,Latin America,Targeted price reset,"transition lifecycle, 19.3% margin, 86 day lead time",419.9,157.8,High,Product,Distributor impact review,2
+CASE006,PF004,Precision Regulator Family,North America,Targeted price reset,"harvest lifecycle, 25.0% margin, 67 day lead time",329.0,79.1,High,Sales,Distributor impact review,3
+CASE007,PF005,Hazardous Location Switches,EMEA,Migration and retirement,"transition lifecycle, 19.0% margin, 124 day lead time",708.6,520.3,Needs validation,Operations,Substitution map and last-time-buy plan,4
+CASE008,PF005,Hazardous Location Switches,APAC,Targeted price reset,"transition lifecycle, 21.4% margin, 82 day lead time",362.1,113.9,Medium,Supply chain,Distributor impact review,5
+CASE009,PF004,Precision Regulator Family,EMEA,Targeted price reset,"harvest lifecycle, 16.0% margin, 88 day lead time",293.4,93.4,Needs validation,Engineering,Distributor impact review,6
+CASE010,PF004,Precision Regulator Family,APAC,Targeted price reset,"harvest lifecycle, 27.1% margin, 97 day lead time",418.2,156.3,Medium,Product,Distributor impact review,2
+CASE011,PF010,Discrete Valve Monitor,EMEA,Targeted price reset,"transition lifecycle, 26.9% margin, 100 day lead time",543.7,283.5,Medium,Sales,Distributor impact review,3
+CASE012,PF009,High Pressure Gas Regulator,APAC,Targeted price reset,"harvest lifecycle, 22.6% margin, 89 day lead time",330.5,113.1,Medium,Operations,Distributor impact review,4
+CASE013,PF003,Valve Island Controls,APAC,NPD discovery gate,"mature lifecycle, 27.8% margin, 70 day lead time",170.7,54.3,Medium,Supply chain,Concept charter and alpha customer evidence,5
+CASE014,PF008,Smart Air Preparation Unit,APAC,Sales enablement refresh,"mature lifecycle, 29.1% margin, 87 day lead time",271.2,79.7,High,Engineering,Positioning update and training package,6

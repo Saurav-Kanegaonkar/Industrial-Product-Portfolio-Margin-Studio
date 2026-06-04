@@ -3,33 +3,97 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Industrial Product Portfolio Margin Studio</title>
+  <title>Industrial Product Portfolio Lifecycle Studio</title>
   <link rel="stylesheet" href="src/styles.css">
 </head>
-<body class="studio">
+<body>
   <main class="app">
-    <header class="hero">
-      <p class="eyebrow">product strategy studio</p>
-      <h1>Industrial Product Portfolio Margin Studio</h1>
-      <p>Industrial product managers need to balance lifecycle decisions, pricing moves, customer feedback, and supply constraints without losing sight of portfolio margin.</p>
+    <header class="topbar">
+      <div>
+        <p class="eyebrow">product lifecycle and margin command center</p>
+        <h1>Industrial Product Portfolio Lifecycle Studio</h1>
+      </div>
+      <div class="header-note">
+        Synthetic ERP, CRM, supplier, quality, and sales enablement signals for portfolio roadmap decisions.
+      </div>
     </header>
-    <section class="metric-grid" id="metrics"></section>
-    <section class="workspace">
-      <article class="panel primary">
-        <span>Output 2</span>
-        <h2>Diagnostic Queue</h2>
-        <div id="table"></div>
-      </article>
-      <aside class="panel">
-        <span>Output 3</span>
-        <h2>What The Data Says</h2>
-        <div id="signals"></div>
-      </aside>
+
+    <nav class="surface-tabs" aria-label="Artifact surfaces">
+      <button class="tab is-active" type="button" data-surface="command">Portfolio</button>
+      <button class="tab" type="button" data-surface="business-case">Business Case</button>
+      <button class="tab" type="button" data-surface="npd">NPD Gate</button>
+      <button class="tab" type="button" data-surface="confidence">Data Confidence</button>
+    </nav>
+
+    <section class="metric-grid" id="metric-grid"></section>
+
+    <section class="surface is-visible" id="surface-command">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">surface 1</p>
+          <h2>Portfolio Command Center</h2>
+        </div>
+        <p>Category health, lifecycle mix, and action scores for a technical industrial product portfolio.</p>
+      </div>
+      <div class="two-column wide-left">
+        <section class="panel">
+          <h3>Platform Margin And Action Scores</h3>
+          <div id="platform-bars" class="bar-stack"></div>
+        </section>
+        <section class="panel">
+          <h3>Lifecycle Mix</h3>
+          <div id="stage-mix" class="stage-mix"></div>
+        </section>
+      </div>
+      <section class="panel">
+        <h3>Top Portfolio Action Queue</h3>
+        <div id="portfolio-table"></div>
+      </section>
     </section>
-    <section class="panel recommendations">
-      <span>Output 4</span>
-      <h2>Analytical Recommendations</h2>
-      <div id="recs"></div>
+
+    <section class="surface" id="surface-business-case">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">surface 2</p>
+          <h2>Pricing And Obsolescence Business Case</h2>
+        </div>
+        <p>Quantified price, retirement, migration, and enablement plays with owners and gate criteria.</p>
+      </div>
+      <div id="case-grid" class="case-grid"></div>
+    </section>
+
+    <section class="surface" id="surface-npd">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">surface 3</p>
+          <h2>NPD Gate And Roadmap Handoff</h2>
+        </div>
+        <p>Early-gate concepts ranked by customer need, portfolio fit, launch readiness, and payback.</p>
+      </div>
+      <div class="two-column">
+        <section class="panel">
+          <h3>Gate Candidate Ranking</h3>
+          <div id="npd-table"></div>
+        </section>
+        <section class="panel">
+          <h3>Role Fit Checklist</h3>
+          <div id="role-fit" class="checklist"></div>
+        </section>
+      </div>
+    </section>
+
+    <section class="surface" id="surface-confidence">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">surface 4</p>
+          <h2>Data Confidence And Source Controls</h2>
+        </div>
+        <p>Controls for the data sources a product manager would reconcile before making portfolio moves.</p>
+      </div>
+      <section class="panel">
+        <h3>Source Control Register</h3>
+        <div id="quality-table"></div>
+      </section>
     </section>
   </main>
   <script src="src/data.js"></script>

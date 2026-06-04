@@ -1,0 +1,9 @@
+control_id,source_system,control,records_checked,failed_records,failure_rate_pct,status,owner
+DQ001,ERP item master,Lifecycle status mapped to SKU family,1248,18,1.4,watch,Sales
+DQ002,ERP margin extract,Unit cost and list price joined by active SKU,1248,11,0.9,pass,Operations
+DQ003,CRM opportunity export,Win loss reason captured for priced quotes,836,74,8.9,watch,Supply chain
+DQ004,Supplier lead time file,Lead time present for constrained components,392,37,9.4,watch,Engineering
+DQ005,Quality claims log,Warranty claims linked to product family,618,16,2.6,pass,Product
+DQ006,Sales training tracker,Launch and transition training completion,455,91,20.0,fail,Sales
+DQ007,Roadmap intake,NPD idea has problem statement and value hypothesis,68,7,10.3,watch,Operations
+DQ008,Distributor feedback notes,Competitive pressure coded by category,291,29,10.0,watch,Supply chain

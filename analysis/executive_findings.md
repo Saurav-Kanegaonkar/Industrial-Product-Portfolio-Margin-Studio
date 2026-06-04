@@ -1,11 +1,13 @@
 # Executive Findings
 
-- Obsolescence risk is highest where low-margin SKUs still absorb sales training and inventory attention.
-- Customer feedback and supplier constraints point to different priorities unless weighted through business-case value.
-- A simple gate score exposes which launch ideas have enough evidence to enter NPD discovery.
+- Transition-stage and harvest-stage product families carry the strongest action scores because margin pressure, service burden, lead time, and substitution feasibility cluster together.
+- Price moves should be framed with revenue-at-risk and distributor impact, not only gross-margin lift.
+- NPD candidates look strongest where customer need, portfolio fit, launch readiness, and data confidence are all present.
+- Sales training and CRM feedback quality are important gates because weak enablement can make a technically sound portfolio action fail in market.
 
-## Recommendations
+## Recommended PM Moves
 
-- Retire low-margin, low-demand SKUs after mapping customer substitution paths and sales enablement needs.
-- Prioritize NPD concepts that improve both portfolio fit and supply-chain feasibility before gate review.
-- Create a recurring KPI readout that ties pricing, product availability, and customer feedback to roadmap choices.
+- Build a quarterly lifecycle council that reviews migration, retirement, and last-time-buy plans by product family.
+- Require each price action to include margin lift, revenue at risk, customer substitution notes, and owner sign-off.
+- Move NPD concepts into discovery only when value, investment, customer proof, and launch dependency are visible.
+- Treat source controls as part of the roadmap process so ERP, CRM, supplier, quality, and sales-training data are reconciled before decisions.

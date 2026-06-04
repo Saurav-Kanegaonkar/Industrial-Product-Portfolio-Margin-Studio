@@ -1,59 +1,74 @@
-# Industrial Product Portfolio Margin Studio
+# Industrial Product Portfolio Lifecycle Studio
 
-## Motivation
+This portfolio artifact is a product-management decision studio for an industrial fluid, pneumatic, sensing, and motion-control portfolio. It shows how a product manager can combine lifecycle stage, margin, cost inflation, supplier constraints, customer need, service burden, CRM feedback, and launch readiness into a defensible portfolio roadmap.
 
-Industrial product managers need to balance lifecycle decisions, pricing moves, customer feedback, and supply constraints without losing sight of portfolio margin.
+The project is intentionally built as a decision artifact, not a generic KPI dashboard. It supports the kinds of product decisions made in a technical industrial portfolio review: which product families need a price reset, which legacy platforms should migrate or retire, which NPD concepts have enough evidence for early gates, and which data sources need validation before a roadmap call.
 
-This project is intentionally scoped as a practical decision artifact: it shows how I would organize source data, surface the operating signal, and turn the analysis into a recommendation that a product, analytics, or operations team could discuss immediately.
+## Screenshots
+
+### Portfolio Command Center
+
+![Portfolio command center](docs/images/portfolio-command.png)
+
+Caption: The first surface summarizes synthetic annualized portfolio revenue, weighted margin, margin lift, lifecycle mix, and the top product-family action queue.
+
+### Pricing And Obsolescence Business Case
+
+![Pricing and obsolescence business case](docs/images/business-case.png)
+
+Caption: The second surface converts portfolio signals into quantified price, migration, retirement, and enablement cases with margin lift, revenue at risk, owners, confidence, and next gate criteria.
+
+### NPD Gate And Roadmap Handoff
+
+![NPD gate and roadmap handoff](docs/images/npd-gate.png)
+
+Caption: The third surface ranks early NPD concepts by customer need, portfolio fit, launch readiness, investment, payback, and evidence status.
 
 ## What Is In The Project
 
-- A browser-based analytical dashboard in `index.html`
-- Source-style synthetic data in `data/`
-- Analysis notes in `analysis/`
+- A static browser artifact in `index.html`, `src/app.js`, `src/styles.css`, and `src/data.js`
+- A deterministic synthetic data generator in `scripts/generate_portfolio_artifact.py`
+- Four source-style CSV datasets in `data/`
+- A generated browser payload in `analysis/outputs/app_payload.json`
+- Analysis notes and SQL-style checks in `analysis/`
 - A data dictionary in `data_dictionary.md`
-- A rendered screenshot in `docs/images/dashboard.png`
 
-## Data Inventory
+## Data
 
-- Six source-style CSVs back the project instead of a tiny sample dataset.
-- The data folder now includes 2,880 daily metric records, 720 source events, 360 data-quality checks, and 90 recommended actions.
-- The analysis folder includes a data profile and recommendations that explain how the evidence should drive product or operating decisions.
-- The `scripts/score_operating_data.py` script ranks entity priorities and data-quality hotspots from the CSVs.
+The project uses synthesized data because SKU-level ERP, CRM, margin, supplier, quality, and sales enablement data for a real industrial automation portfolio is not public. The synthetic structure is modeled on public industrial automation portfolio patterns, including valves, pneumatics, regulators, actuators, sensors, controls, accessories, lifecycle states, distributor feedback, supplier lead times, warranty claims, and sales training readiness.
 
-## What The Data Says
+The generator uses a fixed random seed so the artifact is reproducible. It creates:
 
-- Obsolescence risk is highest where low-margin SKUs still absorb sales training and inventory attention.
-- Customer feedback and supplier constraints point to different priorities unless weighted through business-case value.
-- A simple gate score exposes which launch ideas have enough evidence to enter NPD discovery.
+- `data/product_portfolio.csv`: 48 product-family and region rows with annualized revenue, gross margin, lifecycle stage, cost inflation, lead time, warranty drag, customer need, competitive pressure, service burden, substitution fit, launch readiness, and data confidence.
+- `data/pricing_obsolescence_cases.csv`: 14 ranked price, migration, retirement, NPD, and enablement plays with margin lift, revenue at risk, owner, confidence, and gate criteria.
+- `data/npd_gate_candidates.csv`: 10 early-stage roadmap concepts with estimated value, investment, payback, evidence status, and launch dependency.
+- `data/source_quality_controls.csv`: 8 source controls across ERP, CRM, supplier, quality, training, roadmap, and distributor feedback inputs.
 
-## Analytical Recommendations
+The scoring model is a lightweight PM decision model, not a predictive machine-learning model. It calculates transition urgency, pricing confidence, NPD gate score, and portfolio action score from weighted business inputs. This is meant to be explainable in a portfolio review.
 
-- Retire low-margin, low-demand SKUs after mapping customer substitution paths and sales enablement needs.
-- Prioritize NPD concepts that improve both portfolio fit and supply-chain feasibility before gate review.
-- Create a recurring KPI readout that ties pricing, product availability, and customer feedback to roadmap choices.
+## Role Connection
 
-## Output Walkthrough
+This artifact demonstrates product lifecycle management, product portfolio management, category understanding, pricing strategy, KPI interpretation, financial modeling, NPD gate thinking, sales enablement planning, and ERP/CRM source awareness. It is designed for a product manager responsible for technical industrial product lines, not for a pure BI reporting role.
 
-### Output 1: Executive Pulse
+## Scope
 
-The KPI cards summarize the current operating condition and identify whether the team should trust, investigate, or act.
+What it does:
 
-### Output 2: Diagnostic Queue
+- Turns synthetic product, margin, lifecycle, supplier, quality, CRM, and launch-readiness signals into ranked portfolio actions.
+- Provides 4 distinct surfaces for portfolio review, business-case evaluation, NPD handoff, and data confidence.
+- Documents the data-generation assumptions and scoring logic so the candidate can explain the artifact in an interview.
 
-The table ranks the highest-priority signals by owner group, status, evidence, and risk.
+What it does not do:
 
-### Output 3: Recommendation Memo
-
-The recommendation section converts the dashboard into specific next moves for the operating team.
-
-## Screenshot
-
-![Industrial Product Portfolio Margin Studio dashboard](docs/images/dashboard.png)
+- It does not represent real company performance.
+- It does not use confidential SKU, customer, supplier, or pricing data.
+- It does not forecast demand with a production ML model.
+- It does not replace financial approval, customer discovery, or engineering feasibility review.
 
 ## Run Locally
 
 ```bash
+python3 scripts/generate_portfolio_artifact.py
 python3 -m http.server 4173
 ```
 
